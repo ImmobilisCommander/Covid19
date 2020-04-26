@@ -12,10 +12,12 @@ namespace Covid19.Library
     {
         private static readonly ILog logger = LogManager.GetLogger(typeof(CovidDataMerge));
         private readonly string coordinatesFilePath;
+        private readonly string bingKey;
 
-        public CovidDataMerge(string coordinatesFilePath)
+        public CovidDataMerge(string coordinatesFilePath, string bingKey)
         {
             this.coordinatesFilePath = coordinatesFilePath;
+            this.bingKey = bingKey;
         }
 
         public void Merge(string[] files, string outputFile)
@@ -49,7 +51,7 @@ namespace Covid19.Library
 
             if (datas.Where(x => x.Longitude == 0).Count() > 0)
             {
-                using (var locationProvider = new BingLocationProvider("AvYkxtYFYYkj88wdumo2eSv3Qu7Pt1VGHZq8LTCiZazP8LKV7mUzLvFu145QNuyO", coordinatesFilePath))
+                using (var locationProvider = new BingLocationProvider(bingKey, coordinatesFilePath))
                 {
                     double latitude;
                     double longitude;

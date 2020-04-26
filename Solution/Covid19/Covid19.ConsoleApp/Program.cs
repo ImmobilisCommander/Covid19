@@ -1,10 +1,7 @@
 ﻿using Covid19.Library;
 using log4net;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Configuration;
 
 namespace Covid19.ConsoleApp
 {
@@ -22,19 +19,19 @@ namespace Covid19.ConsoleApp
 
         static void Main(string[] args)
         {
-            logger.Info("Process Started");
+            logger.Info("\nProcess Started");
 
-            var ecdcDownloader = new CovidDataEcdcDownloader(@"E:\Git\ImmobilisCommander\Covid19\Data\ECDC");
+            var ecdcDownloader = new CovidDataEcdcDownloader(ConfigurationManager.AppSettings["EcdcFolder"]);
             ecdcDownloader.DownloadFiles();
 
-            var ecdcExtractor = new CovidDataEcdcExtractor(@"E:\Git\ImmobilisCommander\Covid19\Data\ECDC", @"E:\Git\ImmobilisCommander\Covid19\Data\Covid_ECDC.csv");
+            var ecdcExtractor = new CovidDataEcdcExtractor(ConfigurationManager.AppSettings["EcdcFolder"], ConfigurationManager.AppSettings["EcdcOutputFile"]);
             ecdcExtractor.Extract();
 
-            var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(@"E:\Git\COVID-19\csse_covid_19_data\csse_covid_19_daily_reports", @"E:\Git\ImmobilisCommander\Covid19\Data\Covid_JohnsHopkins.csv");
+            var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(ConfigurationManager.AppSettings["JHophinsFolder"], ConfigurationManager.AppSettings["JHophinsOutputFile"]);
             johnHopkinsExtractor.Extract();
 
-            var mergeFiles = new CovidDataMerge(@"E:\Git\ImmobilisCommander\Covid19\Data\Coordinates.json");
-            mergeFiles.Merge(new string[] { @"E:\Git\ImmobilisCommander\Covid19\Data\Covid_ECDC.csv", @"E:\Git\ImmobilisCommander\Covid19\Data\Covid_JohnsHopkins.csv" }, @"E:\Git\ImmobilisCommander\Covid19\Data\covid_MergeData.csv");
+            var mergeFiles = new CovidDataMerge(ConfigurationManager.AppSettings["Coordinates"], ConfigurationManager.AppSettings["bingKey"]);
+            mergeFiles.Merge(new string[] { ConfigurationManager.AppSettings["EcdcOutputFile"], ConfigurationManager.AppSettings["JHophinsOutputFile"] }, ConfigurationManager.AppSettings["MergedOutputFile"]);
 
             logger.Info("Process Ended");
         }
