@@ -21,17 +21,32 @@ namespace Covid19.ConsoleApp
         {
             logger.Info("\nProcess Started");
 
-            var ecdcDownloader = new CovidDataEcdcDownloader(ConfigurationManager.AppSettings["EcdcFolder"]);
-            ecdcDownloader.DownloadFiles();
+            try
+            {
+                var ecdcFolder = ConfigurationManager.AppSettings["EcdcFolder"];
+                var ecdcOutputFile = ConfigurationManager.AppSettings["EcdcOutputFile"];
+                var jHopkinsFolder = ConfigurationManager.AppSettings["JHophinsFolder"];
+                var jHopkinsOutputFile = ConfigurationManager.AppSettings["JHophinsOutputFile"];
+                var coordinatesFile = ConfigurationManager.AppSettings["Coordinates"];
+                var bingKey = ConfigurationManager.AppSettings["bingKey"];
+                var mergedOutputFile = ConfigurationManager.AppSettings["MergedOutputFile"];
 
-            var ecdcExtractor = new CovidDataEcdcExtractor(ConfigurationManager.AppSettings["EcdcFolder"], ConfigurationManager.AppSettings["EcdcOutputFile"]);
-            ecdcExtractor.Extract();
+                var ecdcDownloader = new CovidDataEcdcDownloader(ecdcFolder);
+                ecdcDownloader.DownloadFiles();
 
-            var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(ConfigurationManager.AppSettings["JHophinsFolder"], ConfigurationManager.AppSettings["JHophinsOutputFile"]);
-            johnHopkinsExtractor.Extract();
+                var ecdcExtractor = new CovidDataEcdcExtractor(ecdcFolder, ecdcOutputFile);
+                ecdcExtractor.Extract();
 
-            var mergeFiles = new CovidDataMerge(ConfigurationManager.AppSettings["Coordinates"], ConfigurationManager.AppSettings["bingKey"]);
-            mergeFiles.Merge(new string[] { ConfigurationManager.AppSettings["EcdcOutputFile"], ConfigurationManager.AppSettings["JHophinsOutputFile"] }, ConfigurationManager.AppSettings["MergedOutputFile"]);
+                var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(jHopkinsFolder, jHopkinsOutputFile);
+                johnHopkinsExtractor.Extract();
+
+                var mergeFiles = new CovidDataMerge(coordinatesFile, bingKey);
+                mergeFiles.Merge(new string[] { ecdcOutputFile, jHopkinsFolder }, mergedOutputFile);
+            }
+            catch (Exception e)
+            {
+                logger.Error(e.Message);
+            }
 
             logger.Info("Process Ended");
         }
