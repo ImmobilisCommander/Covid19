@@ -1,7 +1,11 @@
 ﻿using Covid19.Library;
 using log4net;
 using System;
+using System.Collections.Generic;
 using System.Configuration;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
 
 namespace Covid19.ConsoleApp
 {
@@ -19,36 +23,39 @@ namespace Covid19.ConsoleApp
 
         static void Main(string[] args)
         {
-            logger.Info("\nProcess Started");
+            logger.Info("********************************************");
+            logger.Info("Process Started");
+
+            var sw = Stopwatch.StartNew();
 
             try
             {
-                var ecdcFolder = ConfigurationManager.AppSettings["EcdcFolder"];
-                var ecdcOutputFile = ConfigurationManager.AppSettings["EcdcOutputFile"];
-                var jHopkinsFolder = ConfigurationManager.AppSettings["JHophinsFolder"];
-                var jHopkinsOutputFile = ConfigurationManager.AppSettings["JHophinsOutputFile"];
-                var coordinatesFile = ConfigurationManager.AppSettings["Coordinates"];
+                var config = (Covid19Configuration)ConfigurationManager.GetSection("covid");
                 var bingKey = ConfigurationManager.AppSettings["bingKey"];
-                var mergedOutputFile = ConfigurationManager.AppSettings["MergedOutputFile"];
 
-                var ecdcDownloader = new CovidDataEcdcDownloader(ecdcFolder);
+                var ecdcDownloader = new CovidDataEcdcDownloader(config.Ecdc.RepositoryFolder);
                 ecdcDownloader.DownloadFiles();
 
-                var ecdcExtractor = new CovidDataEcdcExtractor(ecdcFolder, ecdcOutputFile);
-                ecdcExtractor.Extract();
+                var ecdcExtractor = new CovidDataEcdcExtractor(config.Ecdc.RepositoryFolder, config.Ecdc.OutputFile);
+                var data = ecdcExtractor.Extract();
 
-                var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(jHopkinsFolder, jHopkinsOutputFile);
-                johnHopkinsExtractor.Extract();
+                var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(config.JohnHopkins.RepositoryFolder, config.JohnHopkins.OutputFile);
+                var temp = johnHopkinsExtractor.Extract();
+                var result = data.Concat(temp).ToLookup(x => x.Key, x => x.Value).ToDictionary(x => x.Key, g => g.First());
 
-                var mergeFiles = new CovidDataMerge(coordinatesFile, bingKey);
-                mergeFiles.Merge(new string[] { ecdcOutputFile, jHopkinsFolder }, mergedOutputFile);
+                var mergeFiles = new CoordinatesProvider(config.Coordinates.Path, bingKey);
+                mergeFiles.SetCoordinates(result);
+
+                File.WriteAllText(config.MergedOutputFile.Path, result.Values.OrderBy(x => x.DataProvider).ThenBy(x => x.Area).ThenBy(x => x.SubArea).ThenBy(x => x.Admin2).ThenBy(x => x.Date).ToCsv());
             }
             catch (Exception e)
             {
-                logger.Error(e.Message);
+                logger.Error(e.Message, e);
             }
 
-            logger.Info("Process Ended");
+            sw.Stop();
+
+            logger.Info($"Process Ended. Duration {sw.Elapsed}.");
         }
     }
 }

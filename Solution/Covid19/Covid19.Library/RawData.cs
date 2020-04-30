@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace Covid19.Library
 {
-    internal class RawData
+    public class RawData
     {
         public RawData(string line)
         {

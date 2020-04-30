@@ -22,7 +22,7 @@ namespace Covid19.Library
             this.outputFile = outputFile;
         }
 
-        public void Extract()
+        public Dictionary<string, RawData> Extract()
         {
             var f = Directory.GetFiles(repositoyFolder).ToList().OrderBy(x => x).LastOrDefault();
 
@@ -98,6 +98,8 @@ namespace Covid19.Library
                     csv.WriteRecords(data.Values.OrderBy(x => x.Area).ThenBy(x => x.Date));
                 }
             }
+
+            return data;
         }
     }
 }

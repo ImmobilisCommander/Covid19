@@ -9,11 +9,18 @@ using System.Threading.Tasks;
 
 namespace Covid19.Library
 {
+    /// <summary>
+    /// Provide methods to download data files from ECDC
+    /// </summary>
     public class CovidDataEcdcDownloader
     {
         private static readonly ILog logger = LogManager.GetLogger(typeof(CovidDataEcdcDownloader));
         private readonly string downloadFolder;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="downloadFolder">Path to download repository</param>
         public CovidDataEcdcDownloader(string downloadFolder)
         {
             this.downloadFolder = downloadFolder;
@@ -26,18 +33,20 @@ namespace Covid19.Library
         public void DownloadFiles()
         {
             var rootUrl = "https://www.ecdc.europa.eu";
-
             var existingFiles = Directory.GetFiles(downloadFolder).ToList();
-
             var fromDate = new DateTime(2020, 3, 7);
             var nbDaysToNow = (DateTime.Now.AddDays(1) - fromDate).Days;
+
             using (var wc = new WebClientWithTimeout())
             {
                 for (int i = 0; i < nbDaysToNow; i++)
                 {
                     var fileName = $"COVID-19-geographic-disbtribution-worldwide-{fromDate.AddDays(i):yyyy-MM-dd}";
+
+                    // If file has been already downloaded from a previous run don't dowload it again
                     if (!existingFiles.Any(x => x.Contains(fileName)))
                     {
+                        // First files are in xls format
                         var url = $"{rootUrl}/sites/default/files/documents/{fileName}.xls";
 
                         try
@@ -58,6 +67,7 @@ namespace Covid19.Library
 
                             try
                             {
+                                // If xls file does not exist we try to download xlsx file
                                 url = $"{url}x";
                                 wc.DownloadFile(url, Path.Combine(downloadFolder, $"{fileName}.xlsx"));
                             }

@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Covid19.Library
 {
-    internal static class Ext
+    public static class Ext
     {
         private static readonly char[] _trimChars = new char[] { '\"' };
 
-        public static string TryGetValue(this DataRow row, string name)
+        internal static string TryGetValue(this DataRow row, string name)
         {
             string retour = null;
 
@@ -24,7 +24,7 @@ namespace Covid19.Library
             return retour;
         }
 
-        public static string TryGetValue(this DataRowView row, string name)
+        internal static string TryGetValue(this DataRowView row, string name)
         {
             string retour = null;
 
@@ -44,8 +44,6 @@ namespace Covid19.Library
             if (data != null && data.Count() > 0)
             {
                 var sb = new StringBuilder();
-
-                var obj = data.FirstOrDefault();
 
                 var props = typeof(T).GetProperties().ToList();
 
@@ -84,6 +82,11 @@ namespace Covid19.Library
             }
 
             return retour;
+        }
+
+        public static string GetKey(this string txt)
+        {
+            return txt.Replace("\"", "").Replace("_", " ").Trim();
         }
     }
 }

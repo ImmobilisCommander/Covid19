@@ -50,6 +50,7 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -67,10 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BingLocationProvider.cs" />
+    <Compile Include="Coordinates.cs" />
+    <Compile Include="Covid19Configuration.cs" />
     <Compile Include="CovidDataEcdcDownloader.cs" />
     <Compile Include="CovidDataEcdcExtractor.cs" />
     <Compile Include="CovidDataJohnsHopkinsExtractor.cs" />
-    <Compile Include="CovidDataMerge.cs" />
+    <Compile Include="CoordinatesProvider.cs" />
     <Compile Include="CustomCsvReader.cs" />
     <Compile Include="Ext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,46 +8,64 @@ using System.Net;
 
 namespace Covid19.Library
 {
+    /// <summary>
+    /// Provide methods to use Bing location service
+    /// </summary>
     public class BingLocationProvider : IDisposable
     {
+        #region MEMBERS
         private static readonly ILog logger = LogManager.GetLogger(typeof(BingLocationProvider));
 
-        private readonly Dictionary<string, Tuple<double, double>> _coordinates = null;
+        private readonly Dictionary<string, Coordinates> _coordinates = null;
         private readonly string _coordinatesFilePath = null;
         private readonly string _bingKey = null;
-        private bool disposedValue = false;
+        private bool _disposedValue = false; 
+        #endregion
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="bingKey">Bing Key to access service</param>
+        /// <param name="pathToCoordinatesFile">Full path to coordinates files in which are stored previous requests to Bing service results</param>
         public BingLocationProvider(string bingKey, string pathToCoordinatesFile = null)
         {
             _bingKey = bingKey;
             _coordinatesFilePath = pathToCoordinatesFile;
-            _coordinates = new Dictionary<string, Tuple<double, double>>();
+            _coordinates = new Dictionary<string, Coordinates>();
 
             if (!string.IsNullOrEmpty(_coordinatesFilePath) && File.Exists(_coordinatesFilePath))
             {
-                var tempCoords = JsonConvert.DeserializeObject<Dictionary<string, Tuple<double, double>>>(File.ReadAllText(_coordinatesFilePath));
+                var temp = JsonConvert.DeserializeObject<List<Coordinates>>(File.ReadAllText(_coordinatesFilePath));
+                _coordinates = temp.ToDictionary(x => x.LocationName);
 
-                foreach (var item in tempCoords)
-                {
-                    if (!_coordinates.ContainsKey(item.Key.Trim()))
-                    {
-                        _coordinates.Add(item.Key.Trim(), item.Value);
-                    }
-                }
-                logger.Debug($"Fichier de coordonnées \"{_coordinatesFilePath}\" lu. Nombre de coordonnées: {_coordinates.Count}");
+                logger.Debug($"Coordinates file \"{_coordinatesFilePath}\" processed. Number of items: {_coordinates.Count}");
             }
         }
 
+        // ~BingLocationProvider()
+        // {
+        //   Dispose(false);
+        // }
+
+        /// <summary>
+        /// Provide coordinates from location names
+        /// </summary>
+        /// <param name="countryRegion">Country or region</param>
+        /// <param name="adminDistrict">Administrative district</param>
+        /// <param name="locality">Locality or town</param>
+        /// <param name="latitude">Latitude of location</param>
+        /// <param name="longitude">Longitude of location</param>
         public void GetCoordinates(string countryRegion, string adminDistrict, string locality, out double latitude, out double longitude)
         {
             latitude = 0;
             longitude = 0;
-            var key = $"{countryRegion} {adminDistrict} {locality}".Trim();
+            var key = $"{countryRegion} {adminDistrict} {locality}".GetKey();
+
             if (_coordinates.ContainsKey(key))
             {
                 var coord = _coordinates[key];
-                latitude = coord.Item1;
-                longitude = coord.Item2;
+                latitude = coord.Latitude;
+                longitude = coord.Longitude;
             }
             else
             {
@@ -58,9 +76,9 @@ namespace Covid19.Library
 
                     if (temp != null)
                     {
-                        latitude = Convert.ToDouble(temp.resourceSets?.FirstOrDefault()?.resources?.FirstOrDefault()?.Point?.Latitude);
-                        longitude = Convert.ToDouble(temp.resourceSets?.FirstOrDefault()?.resources?.FirstOrDefault()?.Point?.Longitude);
-                        _coordinates.Add(key, new Tuple<double, double>(latitude, longitude));
+                        latitude = Convert.ToDouble(temp.ResourceSets?.FirstOrDefault()?.Resources?.FirstOrDefault()?.Point?.Latitude);
+                        longitude = Convert.ToDouble(temp.ResourceSets?.FirstOrDefault()?.Resources?.FirstOrDefault()?.Point?.Longitude);
+                        _coordinates.Add(key, new Coordinates { LocationName = key, Latitude = latitude, Longitude = longitude });
 
                         logger.Debug($"Bing returned \"{latitude}, {longitude}\" for \"{key}\"");
                     }
@@ -72,65 +90,54 @@ namespace Covid19.Library
             }
         }
 
-        #region IDisposable Support
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!disposedValue)
-            {
-                if (disposing)
-                {
-                    // TODO: supprimer l'état managé (objets managés).
-                }
-
-                // TODO: libérer les ressources non managées (objets non managés) et remplacer un finaliseur ci-dessous.
-                // TODO: définir les champs de grande taille avec la valeur Null.
-
-                File.WriteAllText(_coordinatesFilePath, JsonConvert.SerializeObject(_coordinates));
-                logger.Debug($"Coordonnées sauvegardées dans le fichier \"{_coordinatesFilePath}\"");
-
-                disposedValue = true;
-            }
-        }
-
-        // TODO: remplacer un finaliseur seulement si la fonction Dispose(bool disposing) ci-dessus a du code pour libérer les ressources non managées.
-        // ~BingLocationProvider()
-        // {
-        //   // Ne modifiez pas ce code. Placez le code de nettoyage dans Dispose(bool disposing) ci-dessus.
-        //   Dispose(false);
-        // }
-
+        /// <summary>
+        /// Free memory by direct call to dispose
+        /// </summary>
         public void Dispose()
         {
             Dispose(true);
-            // TODO: supprimer les marques de commentaire pour la ligne suivante si le finaliseur est remplacé ci-dessus.
             // GC.SuppressFinalize(this);
         }
-        #endregion
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!_disposedValue)
+            {
+                if (disposing)
+                {
+                }
+
+                File.WriteAllText(_coordinatesFilePath, JsonConvert.SerializeObject(_coordinates.OrderBy(x => x.Key).Select(x => x.Value), Formatting.Indented));
+                logger.Debug($"Coordinates saved into following file: \"{_coordinatesFilePath}\"");
+
+                _disposedValue = true;
+            }
+        }
 
         #region BING LOCATION RESPONSE
         internal class LocationResult
         {
-            public List<resourceSet> resourceSets { get; set; }
+            public List<ResourceSet> ResourceSets { get; set; }
         }
 
-        internal class resourceSet
+        internal class ResourceSet
         {
-            public List<resource> resources { get; set; }
+            public List<Resource> Resources { get; set; }
         }
 
-        internal class resource
+        internal class Resource
         {
             public string Name { get; set; }
 
-            public point Point { get; set; }
+            public Point Point { get; set; }
         }
 
-        internal class point
+        internal class Point
         {
-            public List<double> coordinates { get; set; }
+            public List<double> Coordinates { get; set; }
 
-            public double Latitude { get { return coordinates.FirstOrDefault(); } }
-            public double Longitude { get { return coordinates.LastOrDefault(); } }
+            public double Latitude { get { return Coordinates.FirstOrDefault(); } }
+            public double Longitude { get { return Coordinates.LastOrDefault(); } }
         }
 
         #endregion
