@@ -16,14 +16,16 @@ namespace Covid19.Library
     {
         private static readonly ILog logger = LogManager.GetLogger(typeof(CovidDataEcdcDownloader));
         private readonly string downloadFolder;
+        private readonly bool? forceDownload;
 
         /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="downloadFolder">Path to download repository</param>
-        public CovidDataEcdcDownloader(string downloadFolder)
+        public CovidDataEcdcDownloader(string downloadFolder, bool? forceDownload)
         {
             this.downloadFolder = downloadFolder;
+            this.forceDownload = forceDownload;
         }
 
         /// <summary>
@@ -34,60 +36,47 @@ namespace Covid19.Library
         {
             var rootUrl = "https://www.ecdc.europa.eu";
             var existingFiles = Directory.GetFiles(downloadFolder).ToList();
+            // Date of the first available file
             var fromDate = new DateTime(2020, 3, 7);
+            // Calculate the number of days for each file to download
             var nbDaysToNow = (DateTime.Now.AddDays(1) - fromDate).Days;
 
-            using (var wc = new WebClientWithTimeout())
+            for (int i = 0; i < nbDaysToNow; i++)
             {
-                for (int i = 0; i < nbDaysToNow; i++)
+                var fileName = $"COVID-19-geographic-disbtribution-worldwide-{fromDate.AddDays(i):yyyy-MM-dd}";
+
+                // If file has been already downloaded from a previous run don't dowload it again
+                if ((forceDownload.HasValue && forceDownload.Value) || !existingFiles.Any(x => x.Contains(fileName)))
                 {
-                    var fileName = $"COVID-19-geographic-disbtribution-worldwide-{fromDate.AddDays(i):yyyy-MM-dd}";
+                    // First files are in xls format
+                    var url = $"{rootUrl}/sites/default/files/documents/{fileName}.xls";
 
-                    // If file has been already downloaded from a previous run don't dowload it again
-                    if (!existingFiles.Any(x => x.Contains(fileName)))
+                    var uri = new Uri(url);
+
+                    if (!uri.DownloadTo(Path.Combine(downloadFolder, $"{fileName}.xls")))
                     {
-                        // First files are in xls format
-                        var url = $"{rootUrl}/sites/default/files/documents/{fileName}.xls";
+                        logger.Debug($"Could not download \"{url}\"");
 
-                        try
+                        // Try download xlsx format file
+                        url = $"{url}x";
+                        uri = new Uri(url);
+                        if (!uri.DownloadTo(Path.Combine(downloadFolder, $"{fileName}.xlsx")))
                         {
-                            wc.DownloadFile(url, Path.Combine(downloadFolder, $"{fileName}.xls"));
-                            logger.Debug(url);
+                            logger.Warn($"Could not download \"{url}\"");
                         }
-                        catch (WebException ex1)
+                        else
                         {
-                            if (ex1.Response != null)
-                            {
-                                logger.Error($"{(ex1.Response as HttpWebResponse).StatusCode}: {url}");
-                            }
-                            else
-                            {
-                                logger.Error($"{ex1.Message}: {url}");
-                            }
-
-                            try
-                            {
-                                // If xls file does not exist we try to download xlsx file
-                                url = $"{url}x";
-                                wc.DownloadFile(url, Path.Combine(downloadFolder, $"{fileName}.xlsx"));
-                            }
-                            catch (WebException ex2)
-                            {
-                                if (ex2.Response != null)
-                                {
-                                    logger.Error($"{(ex2.Response as HttpWebResponse).StatusCode}: {url}");
-                                }
-                                else
-                                {
-                                    logger.Error($"{ex2.Message}: {url}");
-                                }
-                            }
+                            logger.Info($"Downloaded \"{url}\"");
                         }
                     }
                     else
                     {
-                        logger.Debug($"File \"{fileName}\" already exists");
+                        logger.Info($"Downloaded \"{url}\"");
                     }
+                }
+                else
+                {
+                    logger.Debug($"File \"{fileName}\" already exists");
                 }
             }
         }

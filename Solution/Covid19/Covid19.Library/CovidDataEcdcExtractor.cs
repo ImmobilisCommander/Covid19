@@ -72,6 +72,7 @@ namespace Covid19.Library
 
                             if (!data.ContainsKey(obj.ToString()))
                             {
+                                // Data is incremental, must find the value of the previous day and sum it with current day
                                 var temp = data.Values.Where(x => x.Area == obj.Area).FirstOrDefault(x => x.Date == obj.Date.AddDays(-1));
                                 if (temp != null)
                                 {

@@ -33,5 +33,8 @@ namespace Covid19.Library
 
         [ConfigurationProperty("outputFile")]
         public string OutputFile { get { return (string)base["outputFile"]; } }
+
+        [ConfigurationProperty("forceDownload")]
+        public bool? ForceDownload { get { return (bool?)base["forceDownload"]; } }
     }
 }
