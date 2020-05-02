@@ -82,6 +82,7 @@
     <Compile Include="CovidDataJohnsHopkinsExtractor.cs" />
     <Compile Include="CoordinatesProvider.cs" />
     <Compile Include="CustomCsvReader.cs" />
+    <Compile Include="DownloaderElement.cs" />
     <Compile Include="Ext.cs" />
     <Compile Include="FileElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
