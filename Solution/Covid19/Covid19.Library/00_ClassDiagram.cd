@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Covid19.Library.BingLocationProvider" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="1" Width="2" />
+    <NestedTypes>
+      <Class Name="Covid19.Library.BingLocationProvider.LocationResult" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BingLocationProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Covid19.Library.BingLocationProvider.ResourceSet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BingLocationProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Covid19.Library.BingLocationProvider.Resource" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BingLocationProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Covid19.Library.BingLocationProvider.Point" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BingLocationProvider.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAIAAQAAAoAAAAAIAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BingLocationProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Covid19.Library.Coordinates">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAEAAIIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Coordinates.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.CoordinatesProvider">
+    <Position X="5.25" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAACAAAAAIAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoordinatesProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.Covid19Configuration">
+    <Position X="7.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAACAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Covid19Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.FileElement">
+    <Position X="3.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Covid19Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.ProviderElement">
+    <Position X="5.25" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAEAAAIA=</HashCode>
+      <FileName>Covid19Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.CovidDataEcdcDownloader">
+    <Position X="9.5" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>CovidDataEcdcDownloader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.CovidDataEcdcExtractor">
+    <Position X="12" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAYAAAAAAAAAAAIAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>CovidDataEcdcExtractor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.CovidDataJohnsHopkinsExtractor">
+    <Position X="14.25" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAYAAAAAAAAAAAIAAAAAAAAAAAAAAEQAA=</HashCode>
+      <FileName>CovidDataJohnsHopkinsExtractor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.CustomCsvReader">
+    <Position X="1.25" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAgAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>CustomCsvReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.RawData">
+    <Position X="7.25" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABEAAAAAUAQAIAQBAAAAAAAAhAAAgAQAAAAA=</HashCode>
+      <FileName>RawData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Covid19.Library.WebClientWithTimeout">
+    <Position X="9.5" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>WebClientWithTimeout.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

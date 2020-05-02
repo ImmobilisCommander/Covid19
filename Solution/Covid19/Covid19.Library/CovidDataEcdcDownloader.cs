@@ -14,9 +14,9 @@ namespace Covid19.Library
     /// </summary>
     public class CovidDataEcdcDownloader
     {
-        private static readonly ILog logger = LogManager.GetLogger(typeof(CovidDataEcdcDownloader));
-        private readonly string downloadFolder;
-        private readonly bool? forceDownload;
+        private static readonly ILog _logger = LogManager.GetLogger(typeof(CovidDataEcdcDownloader));
+        private readonly string _downloadFolder;
+        private readonly bool? _forceDownload;
 
         /// <summary>
         /// Constructor
@@ -24,8 +24,8 @@ namespace Covid19.Library
         /// <param name="downloadFolder">Path to download repository</param>
         public CovidDataEcdcDownloader(string downloadFolder, bool? forceDownload)
         {
-            this.downloadFolder = downloadFolder;
-            this.forceDownload = forceDownload;
+            this._downloadFolder = downloadFolder;
+            this._forceDownload = forceDownload;
         }
 
         /// <summary>
@@ -35,7 +35,7 @@ namespace Covid19.Library
         public void DownloadFiles()
         {
             var rootUrl = "https://www.ecdc.europa.eu";
-            var existingFiles = Directory.GetFiles(downloadFolder).ToList();
+            var existingFiles = Directory.GetFiles(_downloadFolder).ToList();
             // Date of the first available file
             var fromDate = new DateTime(2020, 3, 7);
             // Calculate the number of days for each file to download
@@ -46,37 +46,37 @@ namespace Covid19.Library
                 var fileName = $"COVID-19-geographic-disbtribution-worldwide-{fromDate.AddDays(i):yyyy-MM-dd}";
 
                 // If file has been already downloaded from a previous run don't dowload it again
-                if ((forceDownload.HasValue && forceDownload.Value) || !existingFiles.Any(x => x.Contains(fileName)))
+                if ((_forceDownload.HasValue && _forceDownload.Value) || !existingFiles.Any(x => x.Contains(fileName)))
                 {
                     // First files are in xls format
                     var url = $"{rootUrl}/sites/default/files/documents/{fileName}.xls";
 
                     var uri = new Uri(url);
 
-                    if (!uri.DownloadTo(Path.Combine(downloadFolder, $"{fileName}.xls")))
+                    if (!uri.DownloadTo(Path.Combine(_downloadFolder, $"{fileName}.xls")))
                     {
-                        logger.Debug($"Could not download \"{url}\"");
+                        _logger.Debug($"Could not download \"{url}\"");
 
                         // Try download xlsx format file
                         url = $"{url}x";
                         uri = new Uri(url);
-                        if (!uri.DownloadTo(Path.Combine(downloadFolder, $"{fileName}.xlsx")))
+                        if (!uri.DownloadTo(Path.Combine(_downloadFolder, $"{fileName}.xlsx")))
                         {
-                            logger.Warn($"Could not download \"{url}\"");
+                            _logger.Warn($"Could not download \"{url}\"");
                         }
                         else
                         {
-                            logger.Info($"Downloaded \"{url}\"");
+                            _logger.Info($"Downloaded \"{url}\"");
                         }
                     }
                     else
                     {
-                        logger.Info($"Downloaded \"{url}\"");
+                        _logger.Info($"Downloaded \"{url}\"");
                     }
                 }
                 else
                 {
-                    logger.Debug($"File \"{fileName}\" already exists");
+                    _logger.Debug($"File \"{fileName}\" already exists");
                 }
             }
         }

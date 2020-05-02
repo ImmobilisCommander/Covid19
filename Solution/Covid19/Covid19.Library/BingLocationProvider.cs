@@ -14,8 +14,7 @@ namespace Covid19.Library
     public class BingLocationProvider : IDisposable
     {
         #region MEMBERS
-        private static readonly ILog logger = LogManager.GetLogger(typeof(BingLocationProvider));
-
+        private static readonly ILog _logger = LogManager.GetLogger(typeof(BingLocationProvider));
         private readonly Dictionary<string, Coordinates> _coordinates = null;
         private readonly string _coordinatesFilePath = null;
         private readonly string _bingKey = null;
@@ -38,7 +37,7 @@ namespace Covid19.Library
                 var temp = JsonConvert.DeserializeObject<List<Coordinates>>(File.ReadAllText(_coordinatesFilePath));
                 _coordinates = temp.ToDictionary(x => x.LocationName);
 
-                logger.Debug($"Coordinates file \"{_coordinatesFilePath}\" processed. Number of items: {_coordinates.Count}");
+                _logger.Debug($"Coordinates file \"{_coordinatesFilePath}\" processed. Number of items: {_coordinates.Count}");
             }
         }
 
@@ -80,11 +79,11 @@ namespace Covid19.Library
                         longitude = Convert.ToDouble(temp.ResourceSets?.FirstOrDefault()?.Resources?.FirstOrDefault()?.Point?.Longitude);
                         _coordinates.Add(key, new Coordinates { LocationName = key, Latitude = latitude, Longitude = longitude });
 
-                        logger.Debug($"Bing returned \"{latitude}, {longitude}\" for \"{key}\"");
+                        _logger.Debug($"Bing returned \"{latitude}, {longitude}\" for \"{key}\"");
                     }
                     else
                     {
-                        logger.Debug($"Bing returned null for \"{key}\"");
+                        _logger.Debug($"Bing returned null for \"{key}\"");
                     }
                 }
             }
@@ -108,7 +107,7 @@ namespace Covid19.Library
                 }
 
                 File.WriteAllText(_coordinatesFilePath, JsonConvert.SerializeObject(_coordinates.OrderBy(x => x.Key).Select(x => x.Value), Formatting.Indented));
-                logger.Debug($"Coordinates saved into following file: \"{_coordinatesFilePath}\"");
+                _logger.Debug($"Coordinates saved into following file: \"{_coordinatesFilePath}\"");
 
                 _disposedValue = true;
             }

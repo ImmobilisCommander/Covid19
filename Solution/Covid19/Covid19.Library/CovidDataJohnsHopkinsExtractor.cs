@@ -14,9 +14,9 @@ namespace Covid19.Library
     public class CovidDataJohnsHopkinsExtractor
     {
         #region Members
-        private static readonly ILog logger = LogManager.GetLogger(typeof(CovidDataJohnsHopkinsExtractor));
+        private static readonly ILog _logger = LogManager.GetLogger(typeof(CovidDataJohnsHopkinsExtractor));
         private static readonly CultureInfo _us = CultureInfo.GetCultureInfo("en-US");
-        private static readonly string[] dateFormats = new string[]
+        private static readonly string[] _dateFormats = new string[]
         {
               // 2/1/20 19:43
               "M/d/yy HH:mm"
@@ -44,8 +44,8 @@ namespace Covid19.Library
             , "MM-dd-yyyy"
         };
 
-        private readonly string repositoryFolder;
-        private readonly string outputFile;
+        private readonly string _repositoryFolder;
+        private readonly string _outputFile;
         #endregion
 
         /// <summary>
@@ -55,8 +55,8 @@ namespace Covid19.Library
         /// <param name="outputFile">Path to the output CSV file</param>
         public CovidDataJohnsHopkinsExtractor(string repositoryFolder, string outputFile)
         {
-            this.repositoryFolder = repositoryFolder;
-            this.outputFile = outputFile;
+            this._repositoryFolder = repositoryFolder;
+            this._outputFile = outputFile;
         }
 
         /// <summary>
@@ -74,7 +74,7 @@ namespace Covid19.Library
             var latAlias = new string[] { "Latitude", "Lat" };
             var lngAlias = new string[] { "Longitude", "Long_" };
 
-            var files = Directory.GetFiles(repositoryFolder, "*.csv", SearchOption.AllDirectories).ToList().OrderBy(x => x);
+            var files = Directory.GetFiles(_repositoryFolder, "*.csv", SearchOption.AllDirectories).ToList().OrderBy(x => x);
 
             foreach (var f in files)
             #region EXTRACT DATA FROM FILES
@@ -115,7 +115,7 @@ namespace Covid19.Library
                             {
                                 var date = Path.GetFileNameWithoutExtension(f);
 
-                                if (DateTime.TryParseExact(date, dateFormats, CultureInfo.GetCultureInfo("fr-fr"), DateTimeStyles.AdjustToUniversal, out DateTime lastUpdate))
+                                if (DateTime.TryParseExact(date, _dateFormats, CultureInfo.GetCultureInfo("fr-fr"), DateTimeStyles.AdjustToUniversal, out DateTime lastUpdate))
                                 {
                                     string area = csv.GetField(idxArea).Replace("Mainland China", "China").Replace("UK", "United Kingdom");
                                     string subarea = csv.GetField(idxSub);
@@ -150,43 +150,43 @@ namespace Covid19.Library
                             }
                             catch (Exception ex)
                             {
-                                logger.Error(string.Concat("\"", f, "\"", ": ", ex.Message));
-                                logger.Debug(string.Join(" ; ", csv.Context.HeaderRecord));
-                                logger.Debug(string.Join(" ; ", csv.Context.Record));
+                                _logger.Error(string.Concat("\"", f, "\"", ": ", ex.Message));
+                                _logger.Debug(string.Join(" ; ", csv.Context.HeaderRecord));
+                                _logger.Debug(string.Join(" ; ", csv.Context.Record));
                                 throw ex;
                             }
                             #endregion
                         }
                     }
                 }
-                logger.Debug($"Processing file \"{Path.GetFileName(f)}\", number of lines added/processed: {addedLines}/{counter}");
+                _logger.Debug($"Processing file \"{Path.GetFileName(f)}\", number of lines added/processed: {addedLines}/{counter}");
             };
             #endregion
 
             #region LOGGING ERRORS
             if (missingFields.Count > 0)
             {
-                logger.Warn($"There are {missingFields.GroupBy(x => x.Item1).Count()} files in which some columns could not be found: \"{string.Join(", ", missingFields.GroupBy(x => x.Item2).Select(x => x.Key))}\"");
-                if (logger.IsDebugEnabled)
+                _logger.Warn($"There are {missingFields.GroupBy(x => x.Item1).Count()} files in which some columns could not be found: \"{string.Join(", ", missingFields.GroupBy(x => x.Item2).Select(x => x.Key))}\"");
+                if (_logger.IsDebugEnabled)
                 {
-                    logger.Debug(string.Concat("Following fields could not be found:\n", string.Join("\n", missingFields.GroupBy(x => x.Item1).Select(x => $"{x.Key}: \"{string.Join("\", \"", x.Select(y => y.Item2))}\""))));
+                    _logger.Debug(string.Concat("Following fields could not be found:\n", string.Join("\n", missingFields.GroupBy(x => x.Item1).Select(x => $"{x.Key}: \"{string.Join("\", \"", x.Select(y => y.Item2))}\""))));
                 }
             }
 
             if (datesErrors.Count > 0)
             {
-                logger.Warn($"There are {datesErrors.Count} dates not correctly formated");
-                if (logger.IsDebugEnabled)
+                _logger.Warn($"There are {datesErrors.Count} dates not correctly formated");
+                if (_logger.IsDebugEnabled)
                 {
-                    logger.Debug(string.Concat("Following dates are not in correct format:\n", string.Join("\n", datesErrors)));
+                    _logger.Debug(string.Concat("Following dates are not in correct format:\n", string.Join("\n", datesErrors)));
                 }
             } 
             #endregion
 
-            logger.Info(string.Concat("Found ", data.Count, " records"));
+            _logger.Info(string.Concat("Found ", data.Count, " records"));
 
             // Writing output file
-            using (var writer = new StreamWriter(outputFile))
+            using (var writer = new StreamWriter(_outputFile))
             {
                 using (var csv = new CsvWriter(writer, CultureInfo.GetCultureInfo("fr-fr")))
                 {

@@ -12,25 +12,25 @@ namespace Covid19.Library
 {
     public class CovidDataEcdcExtractor
     {
-        private static readonly ILog logger = LogManager.GetLogger(typeof(CovidDataEcdcExtractor));
-        private readonly string repositoyFolder;
-        private readonly string outputFile;
+        private static readonly ILog _logger = LogManager.GetLogger(typeof(CovidDataEcdcExtractor));
+        private readonly string _repositoyFolder;
+        private readonly string _outputFile;
 
         public CovidDataEcdcExtractor(string repositoyFolder, string outputFile)
         {
-            this.repositoyFolder = repositoyFolder;
-            this.outputFile = outputFile;
+            this._repositoyFolder = repositoyFolder;
+            this._outputFile = outputFile;
         }
 
         public Dictionary<string, RawData> Extract()
         {
-            var f = Directory.GetFiles(repositoyFolder).ToList().OrderBy(x => x).LastOrDefault();
+            var f = Directory.GetFiles(_repositoyFolder).ToList().OrderBy(x => x).LastOrDefault();
 
             var data = new Dictionary<string, RawData>();
 
             try
             {
-                logger.Debug($"Reading file: \"{f}\"");
+                _logger.Debug($"Reading file: \"{f}\"");
                 using (var sr = File.OpenRead(f))
                 {
                     using (var xl = ExcelReaderFactory.CreateReader(sr, null))
@@ -87,12 +87,12 @@ namespace Covid19.Library
             }
             catch (Exception ex)
             {
-                logger.Error(ex.Message);
+                _logger.Error(ex.Message);
             }
 
-            logger.Info(string.Concat("Found ", data.Count, " records"));
+            _logger.Info(string.Concat("Found ", data.Count, " records"));
 
-            using (var writer = new StreamWriter(this.outputFile))
+            using (var writer = new StreamWriter(this._outputFile))
             {
                 using (var csv = new CsvWriter(writer, CultureInfo.GetCultureInfo("fr-fr")))
                 {

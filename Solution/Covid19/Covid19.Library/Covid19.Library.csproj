@@ -76,13 +76,16 @@
     <Compile Include="CoordinatesProvider.cs" />
     <Compile Include="CustomCsvReader.cs" />
     <Compile Include="Ext.cs" />
+    <Compile Include="FileElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProviderElement.cs" />
     <Compile Include="RawData.cs" />
     <Compile Include="WebClientWithTimeout.cs">
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="00_ClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
