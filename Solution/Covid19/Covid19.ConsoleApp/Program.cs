@@ -44,9 +44,6 @@ namespace Covid19.ConsoleApp
                     ecdcData = ecdcExtractor.Extract();
                 }));
 
-                Task.WaitAll(tasks.ToArray());
-                tasks.Clear();
-
                 Dictionary<string, RawData> jhData = null;
                 tasks.Add(Task.Factory.StartNew(() =>
                 {
