@@ -72,15 +72,53 @@ namespace Covid19.Library
 
                             if (!data.ContainsKey(obj.ToString()))
                             {
-                                // Data is incremental, must find the value of the previous day and sum it with current day
-                                var temp = data.Values.Where(x => x.Area == obj.Area).FirstOrDefault(x => x.Date == obj.Date.AddDays(-1));
-                                if (temp != null)
-                                {
-                                    obj.Confirmed += temp.Confirmed;
-                                    obj.Death += temp.Death;
-                                }
                                 data.Add(obj.ToString(), obj);
                             }
+                        }
+                    }
+                }
+
+                foreach (var area in data.Values.GroupBy(x => x.Area).OrderBy(x => x.Key))
+                {
+                    _logger.Debug($"Processing {area.Key}");
+
+                    var missingData = new List<RawData>();
+                    var mindate = area.Min(x => x.Date);
+                    var maxdate = area.Max(x => x.Date);
+                    var nbDays = (maxdate - mindate).Days;
+
+                    RawData previous = null;
+                    RawData current = null;
+
+                    // For some reason some days have no data. Must create missing day.
+                    for (int i = 0; i <= nbDays; i++)
+                    {
+                        current = area.FirstOrDefault(x => x.Date == mindate.AddDays(i));
+                        if (current == null)
+                        {
+                            current = new RawData { DataProvider = "ECDC", Area = area.Key, Date = mindate.AddDays(i) };
+                        }
+
+                        // Don't take the first day as previous day does not exist
+                        if (i > 0)
+                        {
+                            // data is incremental, take previous day
+                            previous = area.FirstOrDefault(x => x.Date == current.Date.AddDays(-1));
+
+                            // If previous was missing then added to main data source, main source is not refreshed. Keep missing data in a list aside
+                            if (previous == null)
+                            {
+                                previous = missingData.FirstOrDefault(x => x.Date == current.Date.AddDays(-1));
+                            }
+
+                            current.Confirmed += previous.Confirmed;
+                            current.Death += previous.Death;
+                        }
+
+                        if (!data.ContainsKey(current.ToString()))
+                        {
+                            missingData.Add(current);
+                            data.Add(current.ToString(), current);
                         }
                     }
                 }

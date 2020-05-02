@@ -20,15 +20,27 @@ namespace Covid19.Library
         public FileElement MergedOutputFile { get { return (FileElement)base["mergedOutputFile"]; } }
 
         /// <summary>
+        /// ECDC downloader configuration
+        /// </summary>
+        [ConfigurationProperty("ecdcDownloader")]
+        public DownloaderElement EcdcDownloader { get { return (DownloaderElement)base["ecdcDownloader"]; } }
+
+        /// <summary>
         /// ECDC provider configuration
         /// </summary>
-        [ConfigurationProperty("ecdc")]
-        public ProviderElement Ecdc { get { return (ProviderElement)base["ecdc"]; } }
+        [ConfigurationProperty("ecdcProvider")]
+        public ProviderElement EcdcProvider { get { return (ProviderElement)base["ecdcProvider"]; } }
+
+        /// <summary>
+        /// John Hopkins downloader configuration
+        /// </summary>
+        [ConfigurationProperty("jhopkinsDownloader")]
+        public DownloaderElement JohnHopkinsDownloader { get { return (DownloaderElement)base["jhopkinsDownloader"]; } }
 
         /// <summary>
         /// John Hopkins provider configuration
         /// </summary>
-        [ConfigurationProperty("jhopkins")]
-        public ProviderElement JohnHopkins { get { return (ProviderElement)base["jhopkins"]; } }
+        [ConfigurationProperty("jhopkinsProvider")]
+        public ProviderElement JohnHopkinsProvider { get { return (ProviderElement)base["jhopkinsProvider"]; } }
     }
 }

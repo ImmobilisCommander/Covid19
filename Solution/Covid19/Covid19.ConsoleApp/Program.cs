@@ -33,23 +33,26 @@ namespace Covid19.ConsoleApp
             {
                 var config = (Covid19Configuration)ConfigurationManager.GetSection("covid");
                 var bingKey = ConfigurationManager.AppSettings["bingKey"];
-
-                var ecdcDownloader = new CovidDataEcdcDownloader(config.Ecdc.RepositoryFolder, config.Ecdc.ForceDownload);
-                ecdcDownloader.DownloadFiles();
-
                 var tasks = new List<Task>();
 
                 Dictionary<string, RawData> ecdcData = null;
                 tasks.Add(Task.Factory.StartNew(() =>
                 {
-                    var ecdcExtractor = new CovidDataEcdcExtractor(config.Ecdc.RepositoryFolder, config.Ecdc.OutputFile);
+                    var ecdcDownloader = new CovidDataEcdcDownloader(config.EcdcProvider.RepositoryFolder, config.EcdcDownloader.ForceDownload);
+                    ecdcDownloader.DownloadFiles();
+                    var ecdcExtractor = new CovidDataEcdcExtractor(config.EcdcProvider.RepositoryFolder, config.EcdcProvider.OutputFile);
                     ecdcData = ecdcExtractor.Extract();
                 }));
+
+                Task.WaitAll(tasks.ToArray());
+                tasks.Clear();
 
                 Dictionary<string, RawData> jhData = null;
                 tasks.Add(Task.Factory.StartNew(() =>
                 {
-                    var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(config.JohnHopkins.RepositoryFolder, config.JohnHopkins.OutputFile);
+                    var jhDownloader = new CovidDataJohnsHopkinsDownloader(config.JohnHopkinsDownloader.RepositoryPath, config.JohnHopkinsDownloader.Name, config.JohnHopkinsDownloader.Email);
+                    jhDownloader.DownloadFiles();
+                    var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(config.JohnHopkinsProvider.RepositoryFolder, config.JohnHopkinsProvider.OutputFile);
                     jhData = johnHopkinsExtractor.Extract();
                 }));
 
