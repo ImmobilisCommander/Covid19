@@ -49,7 +49,7 @@ namespace Covid19.ConsoleApp
                 {
                     var jhDownloader = new CovidDataJohnsHopkinsDownloader(config.JohnHopkinsDownloader.RepositoryPath, config.JohnHopkinsDownloader.Name, config.JohnHopkinsDownloader.Email);
                     jhDownloader.DownloadFiles();
-                    var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(config.JohnHopkinsProvider.RepositoryFolder, config.JohnHopkinsProvider.OutputFile);
+                    var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(config.JohnHopkinsProvider.RepositoryFolder, config.JohnHopkinsProvider.OutputFile, config.JohnHopkinsProvider.CopyRepositoryFolder);
                     jhData = johnHopkinsExtractor.Extract();
                 }));
 

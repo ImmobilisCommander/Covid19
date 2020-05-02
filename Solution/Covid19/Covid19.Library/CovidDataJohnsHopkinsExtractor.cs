@@ -46,6 +46,7 @@ namespace Covid19.Library
 
         private readonly string _repositoryFolder;
         private readonly string _outputFile;
+        private readonly string _copyRepositoryFolder;
         #endregion
 
         /// <summary>
@@ -53,10 +54,11 @@ namespace Covid19.Library
         /// </summary>
         /// <param name="repositoryFolder">Path to the directory where the data files from John Hopkins are stored</param>
         /// <param name="outputFile">Path to the output CSV file</param>
-        public CovidDataJohnsHopkinsExtractor(string repositoryFolder, string outputFile)
+        public CovidDataJohnsHopkinsExtractor(string repositoryFolder, string outputFile, string copyRepositoryFolder)
         {
             this._repositoryFolder = repositoryFolder;
             this._outputFile = outputFile;
+            this._copyRepositoryFolder = copyRepositoryFolder;
         }
 
         /// <summary>
@@ -159,6 +161,14 @@ namespace Covid19.Library
                         }
                     }
                 }
+
+                var copyFile = Path.Combine(_copyRepositoryFolder, Path.GetFileName(f));
+                if (!File.Exists(copyFile))
+                {
+                    // Make a copy
+                    File.Copy(f, copyFile);
+                }
+
                 _logger.Debug($"Processing file \"{Path.GetFileName(f)}\", number of lines added/processed: {addedLines}/{counter}");
             };
             #endregion

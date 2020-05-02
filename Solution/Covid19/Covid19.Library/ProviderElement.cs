@@ -24,5 +24,11 @@ namespace Covid19.Library
         /// </summary>
         [ConfigurationProperty("outputFile")]
         public string OutputFile { get { return (string)base["outputFile"]; } }
+
+        /// <summary>
+        /// Full path of the output file
+        /// </summary>
+        [ConfigurationProperty("copyRepositoryFolder")]
+        public string CopyRepositoryFolder { get { return (string)base["copyRepositoryFolder"]; } }
     }
 }
