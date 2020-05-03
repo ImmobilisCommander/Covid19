@@ -14,7 +14,7 @@ using System.Linq;
 namespace Covid19.Library
 {
     /// <summary>
-    /// Data extractor for John Hopkins University data files
+    /// Data extractor for Johns Hopkins University data files
     /// </summary>
     public class CovidDataJohnsHopkinsExtractor
     {
@@ -57,7 +57,7 @@ namespace Covid19.Library
         /// <summary>
         /// Constructor
         /// </summary>
-        /// <param name="repositoryFolder">Path to the directory where the data files from John Hopkins are stored</param>
+        /// <param name="repositoryFolder">Path to the directory where the data files from Johns Hopkins are stored</param>
         /// <param name="outputFile">Path to the output CSV file</param>
         public CovidDataJohnsHopkinsExtractor(string repositoryFolder, string outputFile, string copyRepositoryFolder)
         {
@@ -130,7 +130,7 @@ namespace Covid19.Library
                                     if (!string.IsNullOrEmpty(area))
                                     {
                                         var obj = new RawData();
-                                        obj.DataProvider = "JohnHopkins";
+                                        obj.DataProvider = "JohnsHopkins";
                                         obj.Area = area;
                                         obj.SubArea = subarea;
                                         obj.Admin2 = csv.GetField(idxAdmin2)?.Replace("Unassigned", string.Empty);

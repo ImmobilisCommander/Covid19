@@ -52,10 +52,10 @@ namespace Covid19.ConsoleApp
                 Dictionary<string, RawData> jhData = null;
                 tasks.Add(Task.Factory.StartNew(() =>
                 {
-                    var jhDownloader = new CovidDataJohnsHopkinsDownloader(config.JohnHopkinsDownloader.RepositoryPath, config.JohnHopkinsDownloader.Name, config.JohnHopkinsDownloader.Email);
+                    var jhDownloader = new CovidDataJohnsHopkinsDownloader(config.JohnsHopkinsDownloader.RepositoryPath, config.JohnsHopkinsDownloader.Name, config.JohnsHopkinsDownloader.Email);
                     jhDownloader.DownloadFiles();
-                    var johnHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(config.JohnHopkinsProvider.RepositoryFolder, config.JohnHopkinsProvider.OutputFile, config.JohnHopkinsProvider.CopyRepositoryFolder);
-                    jhData = johnHopkinsExtractor.Extract();
+                    var johnsHopkinsExtractor = new CovidDataJohnsHopkinsExtractor(config.JohnsHopkinsProvider.RepositoryFolder, config.JohnsHopkinsProvider.OutputFile, config.JohnsHopkinsProvider.CopyRepositoryFolder);
+                    jhData = johnsHopkinsExtractor.Extract();
                 }));
 
                 Task.WaitAll(tasks.ToArray());

@@ -123,6 +123,12 @@ namespace Covid19.Library
             return txt.Replace("\"", "").Replace("_", " ").Trim();
         }
 
+        /// <summary>
+        /// Download a file and save it
+        /// </summary>
+        /// <param name="url">The url of the file to download</param>
+        /// <param name="filePath">Full path of the file to save it to</param>
+        /// <returns>Return true if file is downloaded and saved correctly. Otherwise false</returns>
         public static bool DownloadTo(this Uri url, string filePath)
         {
             if (url == null || filePath == null)
@@ -144,6 +150,11 @@ namespace Covid19.Library
             }
         }
 
+        /// <summary>
+        /// Return the display name of a <see cref="RawData"/> instance
+        /// </summary>
+        /// <param name="obj">The instance of which the displayname is returned</param>
+        /// <returns></returns>
         public static string ToDisplayName(this RawData obj)
         {
             var arr = new string[4];

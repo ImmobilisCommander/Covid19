@@ -37,15 +37,15 @@ namespace Covid19.Library
         public ProviderElement EcdcProvider { get { return (ProviderElement)base["ecdcProvider"]; } }
 
         /// <summary>
-        /// John Hopkins downloader configuration
+        /// Johns Hopkins downloader configuration
         /// </summary>
         [ConfigurationProperty("jhopkinsDownloader")]
-        public DownloaderElement JohnHopkinsDownloader { get { return (DownloaderElement)base["jhopkinsDownloader"]; } }
+        public DownloaderElement JohnsHopkinsDownloader { get { return (DownloaderElement)base["jhopkinsDownloader"]; } }
 
         /// <summary>
-        /// John Hopkins provider configuration
+        /// Johns Hopkins provider configuration
         /// </summary>
         [ConfigurationProperty("jhopkinsProvider")]
-        public ProviderElement JohnHopkinsProvider { get { return (ProviderElement)base["jhopkinsProvider"]; } }
+        public ProviderElement JohnsHopkinsProvider { get { return (ProviderElement)base["jhopkinsProvider"]; } }
     }
 }

@@ -16,7 +16,7 @@ using System.Linq;
 namespace Covid19.Library
 {
     /// <summary>
-    /// 
+    /// Data extractor for Johns Hopkins University data files
     /// </summary>
     public class CovidDataEcdcExtractor
     {
@@ -24,12 +24,20 @@ namespace Covid19.Library
         private readonly string _repositoyFolder;
         private readonly string _outputFile;
 
-        public CovidDataEcdcExtractor(string repositoyFolder, string outputFile)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="repositoryFolder">Path to the directory where the data files from Johns Hopkins are stored</param>
+        /// <param name="outputFile">Path to the output CSV file</param>
+        public CovidDataEcdcExtractor(string repositoryFolder, string outputFile)
         {
-            this._repositoyFolder = repositoyFolder;
+            this._repositoyFolder = repositoryFolder;
             this._outputFile = outputFile;
         }
 
+        /// <summary>
+        /// Method that extract data and save them a normalized CSV file
+        /// </summary>
         public Dictionary<string, RawData> Extract()
         {
             var f = Directory.GetFiles(_repositoyFolder).ToList().OrderBy(x => x).LastOrDefault();
