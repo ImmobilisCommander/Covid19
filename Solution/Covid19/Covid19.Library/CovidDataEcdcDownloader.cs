@@ -1,11 +1,12 @@
-﻿using log4net;
+﻿// <copyright file="CovidDataEcdcDownloader.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+using log4net;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Covid19.Library
 {

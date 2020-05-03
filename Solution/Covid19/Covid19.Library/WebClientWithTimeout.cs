@@ -1,4 +1,9 @@
-﻿using System;
+﻿// <copyright file="WebClientWithTimeout.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+using System;
 using System.Net;
 
 namespace Covid19.Library

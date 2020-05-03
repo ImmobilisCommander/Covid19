@@ -1,4 +1,9 @@
-﻿using CsvHelper;
+﻿// <copyright file="CovidDataEcdcExtractor.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+using CsvHelper;
 using ExcelDataReader;
 using log4net;
 using System;
@@ -10,6 +15,9 @@ using System.Linq;
 
 namespace Covid19.Library
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class CovidDataEcdcExtractor
     {
         private static readonly ILog _logger = LogManager.GetLogger(typeof(CovidDataEcdcExtractor));
@@ -121,6 +129,8 @@ namespace Covid19.Library
                             data.Add(current.ToString(), current);
                         }
                     }
+
+                    _logger.Debug($"Missing day created for: {string.Join("\n", missingData.Select(x => x.ToDisplayName()))}");
                 }
             }
             catch (Exception ex)

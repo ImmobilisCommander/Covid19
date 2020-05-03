@@ -1,4 +1,9 @@
-﻿using Covid19.Library;
+﻿// <copyright file="Program.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+using Covid19.Library;
 using log4net;
 using System;
 using System.Collections.Generic;

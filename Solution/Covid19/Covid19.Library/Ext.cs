@@ -1,4 +1,9 @@
-﻿using System;
+﻿// <copyright file="Ext.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
@@ -137,6 +142,16 @@ namespace Covid19.Library
                     return false;
                 }
             }
+        }
+
+        public static string ToDisplayName(this RawData obj)
+        {
+            var arr = new string[4];
+            arr[0] = obj.Area;
+            arr[1] = obj.SubArea;
+            arr[2] = obj.Admin2;
+            arr[3] = obj.Date.ToShortDateString();
+            return string.Join(" ", arr.Where(x => !string.IsNullOrEmpty(x)));
         }
     }
 }

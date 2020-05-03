@@ -1,7 +1,11 @@
-﻿using log4net;
+﻿// <copyright file="CoordinatesProvider.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+using log4net;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Covid19.Library
 {

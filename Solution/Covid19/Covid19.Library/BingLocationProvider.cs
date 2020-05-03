@@ -1,4 +1,9 @@
-﻿using log4net;
+﻿// <copyright file="BingLocationProvider.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+using log4net;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -77,14 +82,24 @@ namespace Covid19.Library
                     {
                         latitude = Convert.ToDouble(temp.ResourceSets?.FirstOrDefault()?.Resources?.FirstOrDefault()?.Point?.Latitude);
                         longitude = Convert.ToDouble(temp.ResourceSets?.FirstOrDefault()?.Resources?.FirstOrDefault()?.Point?.Longitude);
-                        _coordinates.Add(key, new Coordinates { LocationName = key, Latitude = latitude, Longitude = longitude });
-
                         _logger.Debug($"Bing returned \"{latitude}, {longitude}\" for \"{key}\"");
+
+                        _coordinates.Add(key, new Coordinates { LocationName = key, Latitude = latitude, Longitude = longitude });
                     }
                     else
                     {
                         _logger.Debug($"Bing returned null for \"{key}\"");
                     }
+                }
+
+                // Try to save coordinates to ensure no data loss. Querying Bing costs money :/
+                try
+                {
+                    File.WriteAllText(_coordinatesFilePath, JsonConvert.SerializeObject(_coordinates.OrderBy(x => x.Key).Select(x => x.Value), Formatting.Indented));
+                }
+                catch (Exception e)
+                {
+                    _logger.Error($"An error occured while saving coordinates file for key {key}: {e.Message}");
                 }
             }
         }
@@ -106,6 +121,7 @@ namespace Covid19.Library
                 {
                 }
 
+                // Saving file on dispose
                 File.WriteAllText(_coordinatesFilePath, JsonConvert.SerializeObject(_coordinates.OrderBy(x => x.Key).Select(x => x.Value), Formatting.Indented));
                 _logger.Debug($"Coordinates saved into following file: \"{_coordinatesFilePath}\"");
 

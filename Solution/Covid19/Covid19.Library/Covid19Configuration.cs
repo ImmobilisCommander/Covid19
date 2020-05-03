@@ -1,4 +1,9 @@
-﻿using System.Configuration;
+﻿// <copyright file="Covid19Configuration.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+using System.Configuration;
 
 namespace Covid19.Library
 {

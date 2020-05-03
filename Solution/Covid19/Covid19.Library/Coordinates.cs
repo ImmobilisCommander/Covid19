@@ -1,4 +1,9 @@
-﻿namespace Covid19.Library
+﻿// <copyright file="Coordinates.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+namespace Covid19.Library
 {
     /// <summary>
     /// DTO for coordinates

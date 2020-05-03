@@ -1,4 +1,9 @@
-﻿using LibGit2Sharp;
+﻿// <copyright file="CovidDataJohnsHopkinsDownloader.cs" company="julien_lefevre@outlook.fr">
+//   Copyright (c) 2020 All Rights Reserved
+//   <author>Julien LEFEVRE</author>
+// </copyright>
+
+using LibGit2Sharp;
 using log4net;
 using System;
 
