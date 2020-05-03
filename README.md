@@ -18,5 +18,5 @@ All along collection of data, both institutes have changed their data format, su
 ### Locations
 Geographic coordinates where missing or inaccurate. Then I decided to use [Bing Map API](https://docs.microsoft.com/en-us/bingmaps/rest-services/) to update latitude and longitude.
 
-## Missing data
+### Missing data
 ECDC may not generate data for some perticular days and location. In order to preserve data continuity, I've had to create missing data.
