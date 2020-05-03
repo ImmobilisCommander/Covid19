@@ -31,28 +31,25 @@ namespace Covid19.Library
         /// <param name="data">Data to check and records to update</param>
         public void SetCoordinates(Dictionary<string, RawData> data)
         {
-            if (data.Values.Any(x => x.Latitude == 0))
+            using (var locationProvider = new BingLocationProvider(_bingKey, _coordinatesFilePath))
             {
-                using (var locationProvider = new BingLocationProvider(_bingKey, _coordinatesFilePath))
-                {
-                    double latitude;
-                    double longitude;
+                double latitude;
+                double longitude;
 
-                    foreach (var obj in data.Values.Where(x => x.Longitude == 0))
+                foreach (var obj in data.Values)
+                {
+                    try
                     {
-                        try
-                        {
-                            locationProvider.GetCoordinates(obj.Area, obj.SubArea, obj.Admin2, out latitude, out longitude);
-                            obj.Latitude = latitude;
-                            obj.Longitude = longitude;
-                        }
-                        catch (Exception ex)
-                        {
-                            _logger.Error($"\"{obj}\": {ex.Message}", ex);
-                        }
+                        locationProvider.GetCoordinates(obj.Area, obj.SubArea, obj.Admin2, out latitude, out longitude);
+                        obj.Latitude = latitude;
+                        obj.Longitude = longitude;
                     }
-                };
-            }
+                    catch (Exception ex)
+                    {
+                        _logger.Error($"\"{obj}\": {ex.Message}", ex);
+                    }
+                }
+            };
         }
     }
 }
