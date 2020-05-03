@@ -16,7 +16,7 @@ Then I used also [ECDC daily geographic distribution](https://www.ecdc.europa.eu
 All along collection of data, both institutes have changed their data format, support files types, date format, column names and number, incremental counting or not. This lead to miss calculations and bad results. I tried to adapt my code to be able to handle these evolutions.
 
 ### Locations
-Geographic coordinates where missing or inaccurate. Then I decided to use [Bing Map API](https://docs.microsoft.com/en-us/bingmaps/rest-services/) to update latitude and longitude.
+Geographic coordinates where missing or inaccurate. Then I decided to use [Bing Map API](https://docs.microsoft.com/en-us/bingmaps/rest-services/) to update latitude and longitude. This enabled me to save this [locations dictionnary](Data/Coordinates.json) for next use.
 
 ### Missing data
 ECDC may not generate data for some perticular days and location. In order to preserve data continuity, I've had to create missing data.
