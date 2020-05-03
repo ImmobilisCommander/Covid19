@@ -1,6 +1,6 @@
 # Covid19
 ## Purpose
-I created this project in order to see the evolution of the Covid19 pandemia spread. It generates one single CSV file of confirmed cases, death, by location and day.
+I created this project in order to see the evolution of the Covid19 pandemia spread. It generates one single [CSV file](Data/covid_MergeData.csv) of confirmed cases, death, by location and day.
 
 ![Global spread of Covid19](Data/Data.PNG "Global Confirmed/Death/Percentage")
 
