@@ -138,7 +138,10 @@ namespace Covid19.Library
                         }
                     }
 
-                    _logger.Debug($"Missing day created for: {string.Join("\n", missingData.Select(x => x.ToDisplayName()))}");
+                    if (missingData.Count > 0 && _logger.IsDebugEnabled)
+                    {
+                        _logger.Debug($"Missing day created for {area.Key}: \"{string.Join("\", \"", missingData.Select(x => $"{x.Date:yyyy-MM-dd}, c:{x.Confirmed}, d:{x.Death}"))}\"");
+                    }
                 }
             }
             catch (Exception ex)
