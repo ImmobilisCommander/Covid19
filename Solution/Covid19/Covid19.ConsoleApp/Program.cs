@@ -37,7 +37,7 @@ namespace Covid19.ConsoleApp
             try
             {
                 var config = (Covid19Configuration)ConfigurationManager.GetSection("covid");
-                var bingKey = ConfigurationManager.AppSettings["bingKey"];
+                var locationApiKey = ConfigurationManager.AppSettings["locationApiKey"];
                 var tasks = new List<Task>();
 
                 Dictionary<string, RawData> ecdcData = null;
@@ -62,8 +62,8 @@ namespace Covid19.ConsoleApp
 
                 var result = ecdcData.Concat(jhData).ToLookup(x => x.Key, x => x.Value).ToDictionary(x => x.Key, g => g.First());
 
-                var mergeFiles = new CoordinatesProvider(config.Coordinates.Path, bingKey);
-                mergeFiles.SetCoordinates(result);
+                var coordinatesProvider = new CoordinatesProvider(config.Coordinates.ProviderName, config.Coordinates.DataFilePath, locationApiKey);
+                coordinatesProvider.SetCoordinates(result);
 
                 logger.Info($"Final counting {result.Count} items.");
 

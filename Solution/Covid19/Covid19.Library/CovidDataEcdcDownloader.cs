@@ -54,14 +54,14 @@ namespace Covid19.Library
 
                     var uri = new Uri(url);
 
-                    if (!uri.DownloadTo(Path.Combine(_downloadFolder, $"{fileName}.xls")))
+                    if (!uri.DownloadTo(Path.Combine(_downloadFolder, $"{fileName}.xls"), _logger))
                     {
                         _logger.Debug($"Could not download \"{url}\"");
 
                         // Try download xlsx format file
                         url = $"{url}x";
                         uri = new Uri(url);
-                        if (!uri.DownloadTo(Path.Combine(_downloadFolder, $"{fileName}.xlsx")))
+                        if (!uri.DownloadTo(Path.Combine(_downloadFolder, $"{fileName}.xlsx"), _logger))
                         {
                             _logger.Warn($"Could not download \"{url}\"");
                         }

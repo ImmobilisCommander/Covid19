@@ -3,6 +3,7 @@
 //   <author>Julien LEFEVRE</author>
 // </copyright>
 
+using log4net;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -128,8 +129,8 @@ namespace Covid19.Library
         /// </summary>
         /// <param name="url">The url of the file to download</param>
         /// <param name="filePath">Full path of the file to save it to</param>
-        /// <returns>Return true if file is downloaded and saved correctly. Otherwise false</returns>
-        public static bool DownloadTo(this Uri url, string filePath)
+        /// <returns>Return true if file is downloaded and saved correctly. Otherwise false even in cas of an error</returns>
+        public static bool DownloadTo(this Uri url, string filePath, ILog logger = null)
         {
             if (url == null || filePath == null)
             {
@@ -143,8 +144,12 @@ namespace Covid19.Library
                     wc.DownloadFile(url, filePath);
                     return true;
                 }
-                catch (WebException)
+                catch (WebException e)
                 {
+                    if (logger != null)
+                    {
+                        logger.Error($"Could not download file \"{filePath}\" due to following error: {e.Message}");
+                    }
                     return false;
                 }
             }

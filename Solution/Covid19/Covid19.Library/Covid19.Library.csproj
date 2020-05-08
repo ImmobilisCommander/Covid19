@@ -85,6 +85,9 @@
     <Compile Include="DownloaderElement.cs" />
     <Compile Include="Ext.cs" />
     <Compile Include="FileElement.cs" />
+    <Compile Include="ILocationProvider.cs" />
+    <Compile Include="LocationProviderElement.cs" />
+    <Compile Include="LocationProviderFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProviderElement.cs" />
     <Compile Include="RawData.cs" />

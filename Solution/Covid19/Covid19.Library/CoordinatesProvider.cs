@@ -16,17 +16,20 @@ namespace Covid19.Library
     {
         private static readonly ILog _logger = LogManager.GetLogger(typeof(CoordinatesProvider));
         private readonly string _coordinatesFilePath;
-        private readonly string _bingKey;
+        private readonly string _locationProviderKey;
+        private readonly string _providerName;
 
         /// <summary>
         /// Constructor
         /// </summary>
+        /// <param name="providerName">Name of the provider</param>
         /// <param name="coordinatesFilePath">Path to the file that stores the coordinates</param>
-        /// <param name="bingKey">Bing key for web request</param>
-        public CoordinatesProvider(string coordinatesFilePath, string bingKey)
+        /// <param name="locationProviderKey">Bing key for web request</param>
+        public CoordinatesProvider(string providerName, string coordinatesFilePath, string locationProviderKey)
         {
+            this._providerName = providerName;
             this._coordinatesFilePath = coordinatesFilePath;
-            this._bingKey = bingKey;
+            this._locationProviderKey = locationProviderKey;
         }
 
         /// <summary>
@@ -35,7 +38,7 @@ namespace Covid19.Library
         /// <param name="data">Data to check and records to update</param>
         public void SetCoordinates(Dictionary<string, RawData> data)
         {
-            using (var locationProvider = new BingLocationProvider(_bingKey, _coordinatesFilePath))
+            using (var locationProvider = LocationProviderFactory.Create(_providerName, _locationProviderKey, _coordinatesFilePath))
             {
                 double latitude;
                 double longitude;

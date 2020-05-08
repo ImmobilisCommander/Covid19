@@ -16,14 +16,14 @@ namespace Covid19.Library
     /// <summary>
     /// Provide methods to use Bing location service
     /// </summary>
-    public class BingLocationProvider : IDisposable
+    public class BingLocationProvider : ILocationProvider
     {
         #region MEMBERS
         private static readonly ILog _logger = LogManager.GetLogger(typeof(BingLocationProvider));
         private readonly Dictionary<string, Coordinates> _coordinates = null;
         private readonly string _coordinatesFilePath = null;
         private readonly string _bingKey = null;
-        private bool _disposedValue = false; 
+        private bool _disposedValue = false;
         #endregion
 
         /// <summary>

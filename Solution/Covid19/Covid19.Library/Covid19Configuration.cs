@@ -16,7 +16,7 @@ namespace Covid19.Library
         /// Configuration of coordinates file
         /// </summary>
         [ConfigurationProperty("coordinates")]
-        public FileElement Coordinates { get { return (FileElement)base["coordinates"]; } }
+        public LocationProviderElement Coordinates { get { return (LocationProviderElement)base["coordinates"]; } }
 
         /// <summary>
         /// Configuration of final output file

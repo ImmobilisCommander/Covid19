@@ -9,25 +9,37 @@ using System;
 
 namespace Covid19.Library
 {
+    /// <summary>
+    /// File downloader for Johns Hopkins data files
+    /// </summary>
     public class CovidDataJohnsHopkinsDownloader
     {
         private static readonly ILog _logger = LogManager.GetLogger(typeof(CovidDataJohnsHopkinsDownloader));
-        private readonly string repositoryPath;
-        private readonly string name;
-        private readonly string email;
+        private readonly string _repositoryPath;
+        private readonly string _name;
+        private readonly string _email;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="repositoryPath">Full path to file repository</param>
+        /// <param name="name">Name to use for Git identity</param>
+        /// <param name="email">Email to use for Git identity</param>
         public CovidDataJohnsHopkinsDownloader(string repositoryPath, string name, string email)
         {
-            this.repositoryPath = repositoryPath;
-            this.name = name;
-            this.email = email;
+            this._repositoryPath = repositoryPath;
+            this._name = name;
+            this._email = email;
         }
 
+        /// <summary>
+        /// Download data from Johns Hopkins Git repository
+        /// </summary>
         public void DownloadFiles()
         {
             try
             {
-                using (var repo = new Repository(repositoryPath))
+                using (var repo = new Repository(_repositoryPath))
                 {
                     // Credential information to fetch
                     var options = new PullOptions
@@ -36,7 +48,7 @@ namespace Covid19.Library
                     };
 
                     // User information to create a merge commit
-                    var signature = new Signature(new Identity(name, email), DateTimeOffset.Now);
+                    var signature = new Signature(new Identity(_name, _email), DateTimeOffset.Now);
 
                     // Pull
                     var result = Commands.Pull(repo, signature, options);
