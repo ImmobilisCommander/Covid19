@@ -860,9 +860,94 @@
     "Longitude": 10.400694847106934
   },
   {
+    "LocationName": "Germany Baden-Wurttemberg",
+    "Latitude": 48.539253234863281,
+    "Longitude": 9.04834270477295
+  },
+  {
     "LocationName": "Germany Bavaria",
     "Latitude": 48.9463996887207,
     "Longitude": 11.418457984924316
+  },
+  {
+    "LocationName": "Germany Bayern",
+    "Latitude": 48.9463996887207,
+    "Longitude": 11.418457984924316
+  },
+  {
+    "LocationName": "Germany Berlin",
+    "Latitude": 52.50140380859375,
+    "Longitude": 13.402331352233887
+  },
+  {
+    "LocationName": "Germany Brandenburg",
+    "Latitude": 52.039512634277344,
+    "Longitude": 13.552465438842773
+  },
+  {
+    "LocationName": "Germany Bremen",
+    "Latitude": 53.10858154296875,
+    "Longitude": 8.7858333587646484
+  },
+  {
+    "LocationName": "Germany Hamburg",
+    "Latitude": 53.544857025146484,
+    "Longitude": 10.023577690124512
+  },
+  {
+    "LocationName": "Germany Hessen",
+    "Latitude": 50.603183746337891,
+    "Longitude": 9.03074836730957
+  },
+  {
+    "LocationName": "Germany Mecklenburg-Vorpommern",
+    "Latitude": 53.774990081787109,
+    "Longitude": 12.57191276550293
+  },
+  {
+    "LocationName": "Germany Niedersachsen",
+    "Latitude": 52.767261505126953,
+    "Longitude": 9.1622943878173828
+  },
+  {
+    "LocationName": "Germany Nordrhein-Westfalen",
+    "Latitude": 51.479785919189453,
+    "Longitude": 7.5621719360351562
+  },
+  {
+    "LocationName": "Germany Rheinland-Pfalz",
+    "Latitude": 49.913749694824219,
+    "Longitude": 7.449185848236084
+  },
+  {
+    "LocationName": "Germany Saarland",
+    "Latitude": 49.384384155273438,
+    "Longitude": 6.9532971382141113
+  },
+  {
+    "LocationName": "Germany Sachsen",
+    "Latitude": 51.052310943603516,
+    "Longitude": 13.348460197448731
+  },
+  {
+    "LocationName": "Germany Sachsen-Anhalt",
+    "Latitude": 52.013160705566406,
+    "Longitude": 11.700652122497559
+  },
+  {
+    "LocationName": "Germany Schleswig-Holstein",
+    "Latitude": 54.181510925292969,
+    "Longitude": 9.7990560531616211
+  },
+  {
+    "LocationName": "Germany Thuringen",
+    "Latitude": 50.903736114501953,
+    "Longitude": 11.024457931518555
+  },
+  {
+    "LocationName": "Germany Unknown",
+    "Latitude": 51.121807098388672,
+    "Longitude": 10.400694847106934
   },
   {
     "LocationName": "Ghana",
@@ -1025,6 +1110,111 @@
     "Longitude": 12.16218376159668
   },
   {
+    "LocationName": "Italy Abruzzo",
+    "Latitude": 42.227558135986328,
+    "Longitude": 13.85505485534668
+  },
+  {
+    "LocationName": "Italy Basilicata",
+    "Latitude": 40.499965667724609,
+    "Longitude": 16.081550598144531
+  },
+  {
+    "LocationName": "Italy Calabria",
+    "Latitude": 39.067947387695312,
+    "Longitude": 16.34764289855957
+  },
+  {
+    "LocationName": "Italy Campania",
+    "Latitude": 40.860271453857422,
+    "Longitude": 14.842539787292481
+  },
+  {
+    "LocationName": "Italy Emilia-Romagna",
+    "Latitude": 44.525909423828125,
+    "Longitude": 11.039340972900391
+  },
+  {
+    "LocationName": "Italy Friuli Venezia Giulia",
+    "Latitude": 46.224346160888672,
+    "Longitude": 13.151811599731445
+  },
+  {
+    "LocationName": "Italy Lazio",
+    "Latitude": 41.980552673339844,
+    "Longitude": 12.766845703125
+  },
+  {
+    "LocationName": "Italy Liguria",
+    "Latitude": 44.450000762939453,
+    "Longitude": 8.766667366027832
+  },
+  {
+    "LocationName": "Italy Lombardia",
+    "Latitude": 45.620437622070312,
+    "Longitude": 9.7689895629882812
+  },
+  {
+    "LocationName": "Italy Marche",
+    "Latitude": 43.348224639892578,
+    "Longitude": 13.137866020202637
+  },
+  {
+    "LocationName": "Italy Molise",
+    "Latitude": 41.684318542480469,
+    "Longitude": 14.595197677612305
+  },
+  {
+    "LocationName": "Italy P.A. Bolzano",
+    "Latitude": 46.696163177490234,
+    "Longitude": 11.416104316711426
+  },
+  {
+    "LocationName": "Italy P.A. Trento",
+    "Latitude": 46.134738922119141,
+    "Longitude": 11.120939254760742
+  },
+  {
+    "LocationName": "Italy Piemonte",
+    "Latitude": 45.060531616210938,
+    "Longitude": 7.9230289459228516
+  },
+  {
+    "LocationName": "Italy Puglia",
+    "Latitude": 40.983333587646484,
+    "Longitude": 16.620948791503906
+  },
+  {
+    "LocationName": "Italy Sardegna",
+    "Latitude": 40.07720947265625,
+    "Longitude": 9.02628231048584
+  },
+  {
+    "LocationName": "Italy Sicilia",
+    "Latitude": 37.599834442138672,
+    "Longitude": 14.142692565917969
+  },
+  {
+    "LocationName": "Italy Toscana",
+    "Latitude": 43.45953369140625,
+    "Longitude": 11.135786056518555
+  },
+  {
+    "LocationName": "Italy Umbria",
+    "Latitude": 42.965621948242188,
+    "Longitude": 12.489994049072266
+  },
+  {
+    "LocationName": "Italy Valle d'Aosta",
+    "Latitude": 45.730255126953125,
+    "Longitude": 7.3871970176696777
+  },
+  {
+    "LocationName": "Italy Veneto",
+    "Latitude": 45.648227691650391,
+    "Longitude": 11.855151176452637
+  },
+  {
     "LocationName": "Ivory Coast",
     "Latitude": 7.6228008270263672,
     "Longitude": -5.5526318550109863
@@ -1098,6 +1288,11 @@
     "LocationName": "Lebanon None",
     "Latitude": 33.921443939208984,
     "Longitude": 35.893428802490234
+  },
+  {
+    "LocationName": "Lesotho",
+    "Latitude": -29.582122802734375,
+    "Longitude": 28.246875762939453
   },
   {
     "LocationName": "Liberia",
@@ -1553,6 +1748,101 @@
     "LocationName": "Spain",
     "Latitude": 40.3876953125,
     "Longitude": -3.5573899745941162
+  },
+  {
+    "LocationName": "Spain Andalusia",
+    "Latitude": 37.458236694335938,
+    "Longitude": -4.5681939125061035
+  },
+  {
+    "LocationName": "Spain Aragon",
+    "Latitude": 41.519607543945312,
+    "Longitude": -0.65986299514770508
+  },
+  {
+    "LocationName": "Spain Asturias",
+    "Latitude": 43.292312622070312,
+    "Longitude": -5.9934210777282715
+  },
+  {
+    "LocationName": "Spain Baleares",
+    "Latitude": 39.621437072753906,
+    "Longitude": 2.9579141139984131
+  },
+  {
+    "LocationName": "Spain C. Valenciana",
+    "Latitude": 39.390495300292969,
+    "Longitude": -0.54301398992538452
+  },
+  {
+    "LocationName": "Spain Canarias",
+    "Latitude": 28.290529251098633,
+    "Longitude": -16.556716918945312
+  },
+  {
+    "LocationName": "Spain Cantabria",
+    "Latitude": 43.198394775390625,
+    "Longitude": -4.0313920974731445
+  },
+  {
+    "LocationName": "Spain Castilla - La Mancha",
+    "Latitude": 39.580986022949219,
+    "Longitude": -3.0045700073242188
+  },
+  {
+    "LocationName": "Spain Castilla y Leon",
+    "Latitude": 41.751213073730469,
+    "Longitude": -4.7884111404418945
+  },
+  {
+    "LocationName": "Spain Catalonia",
+    "Latitude": 41.796745300292969,
+    "Longitude": 1.5317169427871704
+  },
+  {
+    "LocationName": "Spain Ceuta",
+    "Latitude": 35.89361572265625,
+    "Longitude": -5.3428888320922852
+  },
+  {
+    "LocationName": "Spain Extremadura",
+    "Latitude": 39.191432952880859,
+    "Longitude": -6.150780200958252
+  },
+  {
+    "LocationName": "Spain Galicia",
+    "Latitude": 42.754928588867188,
+    "Longitude": -7.9271597862243652
+  },
+  {
+    "LocationName": "Spain La Rioja",
+    "Latitude": 42.274738311767578,
+    "Longitude": -2.5170729160308838
+  },
+  {
+    "LocationName": "Spain Madrid",
+    "Latitude": 40.494827270507812,
+    "Longitude": -3.7158949375152588
+  },
+  {
+    "LocationName": "Spain Melilla",
+    "Latitude": 35.291088104248047,
+    "Longitude": -2.9503989219665527
+  },
+  {
+    "LocationName": "Spain Murcia",
+    "Latitude": 37.990310668945312,
+    "Longitude": -1.4740790128707886
+  },
+  {
+    "LocationName": "Spain Navarra",
+    "Latitude": 42.667636871337891,
+    "Longitude": -1.6474779844284058
+  },
+  {
+    "LocationName": "Spain Pais Vasco",
+    "Latitude": 43.043533325195312,
+    "Longitude": -2.6168649196624756
   },
   {
     "LocationName": "Sri Lanka",
