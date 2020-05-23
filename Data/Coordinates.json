@@ -205,6 +205,146 @@
     "Longitude": -53.069316864013672
   },
   {
+    "LocationName": "Brazil Acre",
+    "Latitude": -9.9785804748535156,
+    "Longitude": -67.811836242675781
+  },
+  {
+    "LocationName": "Brazil Alagoas",
+    "Latitude": -9.6620397567749023,
+    "Longitude": -35.735160827636719
+  },
+  {
+    "LocationName": "Brazil Amapa",
+    "Latitude": 0.036410000175237656,
+    "Longitude": -51.048290252685547
+  },
+  {
+    "LocationName": "Brazil Amazonas",
+    "Latitude": -3.1222999095916748,
+    "Longitude": -60.014621734619141
+  },
+  {
+    "LocationName": "Brazil Bahia",
+    "Latitude": -12.972900390625,
+    "Longitude": -38.501239776611328
+  },
+  {
+    "LocationName": "Brazil Ceara",
+    "Latitude": -3.7833199501037598,
+    "Longitude": -38.588901519775391
+  },
+  {
+    "LocationName": "Brazil Distrito Federal",
+    "Latitude": -15.792110443115234,
+    "Longitude": -47.897750854492188
+  },
+  {
+    "LocationName": "Brazil Espirito Santo",
+    "Latitude": -20.306770324707031,
+    "Longitude": -40.306228637695312
+  },
+  {
+    "LocationName": "Brazil Goias",
+    "Latitude": -16.690370559692383,
+    "Longitude": -49.258380889892578
+  },
+  {
+    "LocationName": "Brazil Maranhao",
+    "Latitude": -2.5144999027252197,
+    "Longitude": -44.300678253173828
+  },
+  {
+    "LocationName": "Brazil Mato Grosso",
+    "Latitude": -15.614919662475586,
+    "Longitude": -56.093231201171875
+  },
+  {
+    "LocationName": "Brazil Mato Grosso do Sul",
+    "Latitude": -20.45149040222168,
+    "Longitude": -54.616119384765625
+  },
+  {
+    "LocationName": "Brazil Minas Gerais",
+    "Latitude": -19.91864013671875,
+    "Longitude": -43.935691833496094
+  },
+  {
+    "LocationName": "Brazil Para",
+    "Latitude": -1.4393600225448608,
+    "Longitude": -48.497688293457031
+  },
+  {
+    "LocationName": "Brazil Paraiba",
+    "Latitude": -7.1304898262023926,
+    "Longitude": -34.8673095703125
+  },
+  {
+    "LocationName": "Brazil Parana",
+    "Latitude": -25.430479049682617,
+    "Longitude": -49.284511566162109
+  },
+  {
+    "LocationName": "Brazil Pernambuco",
+    "Latitude": -8.085169792175293,
+    "Longitude": -34.914638519287109
+  },
+  {
+    "LocationName": "Brazil Piaui",
+    "Latitude": -5.1051797866821289,
+    "Longitude": -42.801948547363281
+  },
+  {
+    "LocationName": "Brazil Rio de Janeiro",
+    "Latitude": -22.90880012512207,
+    "Longitude": -43.196739196777344
+  },
+  {
+    "LocationName": "Brazil Rio Grande do Norte",
+    "Latitude": -5.8059201240539551,
+    "Longitude": -35.210540771484375
+  },
+  {
+    "LocationName": "Brazil Rio Grande do Sul",
+    "Latitude": -30.039529800415039,
+    "Longitude": -51.2169303894043
+  },
+  {
+    "LocationName": "Brazil Rondonia",
+    "Latitude": -8.7618999481201172,
+    "Longitude": -63.90618896484375
+  },
+  {
+    "LocationName": "Brazil Roraima",
+    "Latitude": 2.8242499828338623,
+    "Longitude": -60.657421112060547
+  },
+  {
+    "LocationName": "Brazil Santa Catarina",
+    "Latitude": -27.59984016418457,
+    "Longitude": -48.541820526123047
+  },
+  {
+    "LocationName": "Brazil Sao Paulo",
+    "Latitude": -23.533969879150391,
+    "Longitude": -46.628868103027344
+  },
+  {
+    "LocationName": "Brazil Sergipe",
+    "Latitude": -10.910599708557129,
+    "Longitude": -37.059898376464844
+  },
+  {
+    "LocationName": "Brazil Tocantins",
+    "Latitude": -10.280739784240723,
+    "Longitude": -48.30535888671875
+  },
+  {
+    "LocationName": "Brazil Unknown",
+    "Latitude": -10.775375366210938,
+    "Longitude": -53.069316864013672
+  },
+  {
     "LocationName": "British Virgin Islands",
     "Latitude": 18.42353630065918,
     "Longitude": -64.626052856445312
@@ -393,6 +533,91 @@
     "LocationName": "Chile",
     "Latitude": -35.232711791992188,
     "Longitude": -71.218841552734375
+  },
+  {
+    "LocationName": "Chile Antofagasta",
+    "Latitude": -23.535581588745117,
+    "Longitude": -69.119171142578125
+  },
+  {
+    "LocationName": "Chile Araucania",
+    "Latitude": -38.649131774902344,
+    "Longitude": -72.274765014648438
+  },
+  {
+    "LocationName": "Chile Arica y Parinacota",
+    "Latitude": -18.497072219848633,
+    "Longitude": -69.628471374511719
+  },
+  {
+    "LocationName": "Chile Atacama",
+    "Latitude": -27.394994735717773,
+    "Longitude": -69.909858703613281
+  },
+  {
+    "LocationName": "Chile Aysen",
+    "Latitude": -45.656009674072266,
+    "Longitude": -73.443397521972656
+  },
+  {
+    "LocationName": "Chile Biobio",
+    "Latitude": -37.497962951660156,
+    "Longitude": -72.3896255493164
+  },
+  {
+    "LocationName": "Chile Coquimbo",
+    "Latitude": -30.618938446044922,
+    "Longitude": -70.860748291015625
+  },
+  {
+    "LocationName": "Chile Los Lagos",
+    "Latitude": -41.896942138671875,
+    "Longitude": -72.661506652832031
+  },
+  {
+    "LocationName": "Chile Los Rios",
+    "Latitude": -40.003471374511719,
+    "Longitude": -72.573905944824219
+  },
+  {
+    "LocationName": "Chile Magallanes",
+    "Latitude": -52.741718292236328,
+    "Longitude": -71.227210998535156
+  },
+  {
+    "LocationName": "Chile Maule",
+    "Latitude": -35.621044158935547,
+    "Longitude": -71.445884704589844
+  },
+  {
+    "LocationName": "Chile Metropolitana",
+    "Latitude": -33.604099273681641,
+    "Longitude": -70.6272201538086
+  },
+  {
+    "LocationName": "Chile Nuble",
+    "Latitude": -36.645328521728516,
+    "Longitude": -71.974411010742188
+  },
+  {
+    "LocationName": "Chile OHiggins",
+    "Latitude": -35.232711791992188,
+    "Longitude": -71.218841552734375
+  },
+  {
+    "LocationName": "Chile Tarapaca",
+    "Latitude": -20.215602874755859,
+    "Longitude": -69.393104553222656
+  },
+  {
+    "LocationName": "Chile Unknown",
+    "Latitude": -35.232711791992188,
+    "Longitude": -71.218841552734375
+  },
+  {
+    "LocationName": "Chile Valparaiso",
+    "Latitude": -32.626628875732422,
+    "Longitude": -71.416732788085938
   },
   {
     "LocationName": "China",
@@ -1390,6 +1615,166 @@
     "Longitude": -102.52513885498047
   },
   {
+    "LocationName": "Mexico Aguascalientes",
+    "Latitude": 22.006446838378906,
+    "Longitude": -102.36193084716797
+  },
+  {
+    "LocationName": "Mexico Baja California",
+    "Latitude": 30.584377288818359,
+    "Longitude": -115.10977172851563
+  },
+  {
+    "LocationName": "Mexico Baja California Sur",
+    "Latitude": 25.922014236450195,
+    "Longitude": -112.07546234130859
+  },
+  {
+    "LocationName": "Mexico Campeche",
+    "Latitude": 18.840118408203125,
+    "Longitude": -90.3599624633789
+  },
+  {
+    "LocationName": "Mexico Chiapas",
+    "Latitude": 16.486602783203125,
+    "Longitude": -92.468452453613281
+  },
+  {
+    "LocationName": "Mexico Chihuahua",
+    "Latitude": 28.808509826660156,
+    "Longitude": -106.46898651123047
+  },
+  {
+    "LocationName": "Mexico Ciudad de Mexico",
+    "Latitude": 19.276912689208984,
+    "Longitude": -99.139396667480469
+  },
+  {
+    "LocationName": "Mexico Coahuila",
+    "Latitude": 27.295413970947266,
+    "Longitude": -102.04405212402344
+  },
+  {
+    "LocationName": "Mexico Colima",
+    "Latitude": 19.14100456237793,
+    "Longitude": -103.91311645507813
+  },
+  {
+    "LocationName": "Mexico Durango",
+    "Latitude": 24.923620223999023,
+    "Longitude": -104.91339111328125
+  },
+  {
+    "LocationName": "Mexico Guanajuato",
+    "Latitude": 20.905349731445312,
+    "Longitude": -101.01258087158203
+  },
+  {
+    "LocationName": "Mexico Guerrero",
+    "Latitude": 17.667991638183594,
+    "Longitude": -99.9218521118164
+  },
+  {
+    "LocationName": "Mexico Hidalgo",
+    "Latitude": 20.479558944702148,
+    "Longitude": -98.8870849609375
+  },
+  {
+    "LocationName": "Mexico Jalisco",
+    "Latitude": 20.580795288085938,
+    "Longitude": -103.61320495605469
+  },
+  {
+    "LocationName": "Mexico Mexico",
+    "Latitude": 19.355936050415039,
+    "Longitude": -99.6453857421875
+  },
+  {
+    "LocationName": "Mexico Michoacan",
+    "Latitude": 19.207086563110352,
+    "Longitude": -101.87814331054688
+  },
+  {
+    "LocationName": "Mexico Morelos",
+    "Latitude": 18.742053985595703,
+    "Longitude": -99.074920654296875
+  },
+  {
+    "LocationName": "Mexico Nayarit",
+    "Latitude": 21.804145812988281,
+    "Longitude": -104.84092712402344
+  },
+  {
+    "LocationName": "Mexico Nuevo Leon",
+    "Latitude": 25.572591781616211,
+    "Longitude": -99.968978881835938
+  },
+  {
+    "LocationName": "Mexico Oaxaca",
+    "Latitude": 16.969356536865234,
+    "Longitude": -96.450347900390625
+  },
+  {
+    "LocationName": "Mexico Puebla",
+    "Latitude": 19.006071090698242,
+    "Longitude": -97.900070190429688
+  },
+  {
+    "LocationName": "Mexico Queretaro",
+    "Latitude": 20.855201721191406,
+    "Longitude": -99.845672607421875
+  },
+  {
+    "LocationName": "Mexico Quintana Roo",
+    "Latitude": 19.625978469848633,
+    "Longitude": -88.129974365234375
+  },
+  {
+    "LocationName": "Mexico San Luis Potosi",
+    "Latitude": 22.585535049438477,
+    "Longitude": -100.41690063476563
+  },
+  {
+    "LocationName": "Mexico Sinaloa",
+    "Latitude": 24.992010116577148,
+    "Longitude": -107.46929168701172
+  },
+  {
+    "LocationName": "Mexico Sonora",
+    "Latitude": 29.69720458984375,
+    "Longitude": -110.79897308349609
+  },
+  {
+    "LocationName": "Mexico Tabasco",
+    "Latitude": 17.93766975402832,
+    "Longitude": -92.59393310546875
+  },
+  {
+    "LocationName": "Mexico Tamaulipas",
+    "Latitude": 24.290903091430664,
+    "Longitude": -98.640655517578125
+  },
+  {
+    "LocationName": "Mexico Tlaxcala",
+    "Latitude": 19.428535461425781,
+    "Longitude": -98.168533325195312
+  },
+  {
+    "LocationName": "Mexico Veracruz",
+    "Latitude": 19.393558502197266,
+    "Longitude": -96.418983459472656
+  },
+  {
+    "LocationName": "Mexico Yucatan",
+    "Latitude": 20.746322631835938,
+    "Longitude": -88.920936584472656
+  },
+  {
+    "LocationName": "Mexico Zacatecas",
+    "Latitude": 23.28900146484375,
+    "Longitude": -102.66056823730469
+  },
+  {
     "LocationName": "Moldova",
     "Latitude": 47.202144622802734,
     "Longitude": 28.4654483795166
@@ -1843,6 +2228,11 @@
     "LocationName": "Spain Pais Vasco",
     "Latitude": 43.043533325195312,
     "Longitude": -2.6168649196624756
+  },
+  {
+    "LocationName": "Spain Unknown",
+    "Latitude": 40.3876953125,
+    "Longitude": -3.5573899745941162
   },
   {
     "LocationName": "Sri Lanka",
