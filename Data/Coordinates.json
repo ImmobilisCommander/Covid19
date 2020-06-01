@@ -795,6 +795,166 @@
     "Longitude": -73.076202392578125
   },
   {
+    "LocationName": "Colombia Amazonas",
+    "Latitude": -1.5395560264587402,
+    "Longitude": -71.4993667602539
+  },
+  {
+    "LocationName": "Colombia Antioquia",
+    "Latitude": 6.9230117797851562,
+    "Longitude": -75.567657470703125
+  },
+  {
+    "LocationName": "Colombia Arauca",
+    "Latitude": 6.5692949295043945,
+    "Longitude": -70.965217590332031
+  },
+  {
+    "LocationName": "Colombia Atlantico",
+    "Latitude": 10.676511764526367,
+    "Longitude": -74.96417236328125
+  },
+  {
+    "LocationName": "Colombia Bolivar",
+    "Latitude": 8.7458200454711914,
+    "Longitude": -74.507240295410156
+  },
+  {
+    "LocationName": "Colombia Boyaca",
+    "Latitude": 5.7767558097839355,
+    "Longitude": -73.101875305175781
+  },
+  {
+    "LocationName": "Colombia Caldas",
+    "Latitude": 5.3427457809448242,
+    "Longitude": -75.306327819824219
+  },
+  {
+    "LocationName": "Colombia Capital District",
+    "Latitude": 4.3183450698852539,
+    "Longitude": -74.179336547851562
+  },
+  {
+    "LocationName": "Colombia Caqueta",
+    "Latitude": 0.8016350269317627,
+    "Longitude": -73.962730407714844
+  },
+  {
+    "LocationName": "Colombia Casanare",
+    "Latitude": 5.4040389060974121,
+    "Longitude": -71.601264953613281
+  },
+  {
+    "LocationName": "Colombia Cauca",
+    "Latitude": 2.3952510356903076,
+    "Longitude": -76.828689575195312
+  },
+  {
+    "LocationName": "Colombia Cesar",
+    "Latitude": 9.5429010391235352,
+    "Longitude": -73.516586303710938
+  },
+  {
+    "LocationName": "Colombia Choco",
+    "Latitude": 5.9534730911254883,
+    "Longitude": -76.944282531738281
+  },
+  {
+    "LocationName": "Colombia Cordoba",
+    "Latitude": 8.358489990234375,
+    "Longitude": -75.795913696289062
+  },
+  {
+    "LocationName": "Colombia Cundinamarca",
+    "Latitude": 4.8226962089538574,
+    "Longitude": -74.096595764160156
+  },
+  {
+    "LocationName": "Colombia Guainia",
+    "Latitude": 2.7280979156494141,
+    "Longitude": -68.815811157226562
+  },
+  {
+    "LocationName": "Colombia Huila",
+    "Latitude": 2.5570640563964844,
+    "Longitude": -75.5944595336914
+  },
+  {
+    "LocationName": "Colombia La Guajira",
+    "Latitude": 11.476536750793457,
+    "Longitude": -72.429443359375
+  },
+  {
+    "LocationName": "Colombia Magdalena",
+    "Latitude": 10.246458053588867,
+    "Longitude": -74.259239196777344
+  },
+  {
+    "LocationName": "Colombia Meta",
+    "Latitude": 3.3448410034179688,
+    "Longitude": -72.9555892944336
+  },
+  {
+    "LocationName": "Colombia Narino",
+    "Latitude": 1.5401730537414551,
+    "Longitude": -77.852767944335938
+  },
+  {
+    "LocationName": "Colombia Norte de Santander",
+    "Latitude": 8.0954751968383789,
+    "Longitude": -72.883682250976562
+  },
+  {
+    "LocationName": "Colombia Putumayo",
+    "Latitude": 0.45174700021743774,
+    "Longitude": -75.851150512695312
+  },
+  {
+    "LocationName": "Colombia Quindio",
+    "Latitude": 4.4561457633972168,
+    "Longitude": -75.689613342285156
+  },
+  {
+    "LocationName": "Colombia Risaralda",
+    "Latitude": 4.8166279792785645,
+    "Longitude": -75.700027465820312
+  },
+  {
+    "LocationName": "Colombia San Andres y Providencia",
+    "Latitude": 12.542878150939941,
+    "Longitude": -81.7177505493164
+  },
+  {
+    "LocationName": "Colombia Santander",
+    "Latitude": 6.6961221694946289,
+    "Longitude": -73.4869384765625
+  },
+  {
+    "LocationName": "Colombia Sucre",
+    "Latitude": 9.0567941665649414,
+    "Longitude": -75.1076431274414
+  },
+  {
+    "LocationName": "Colombia Tolima",
+    "Latitude": 4.040924072265625,
+    "Longitude": -75.2533950805664
+  },
+  {
+    "LocationName": "Colombia Valle del Cauca",
+    "Latitude": 3.8496339321136475,
+    "Longitude": -76.517082214355469
+  },
+  {
+    "LocationName": "Colombia Vaupes",
+    "Latitude": 0.64668899774551392,
+    "Longitude": -70.559814453125
+  },
+  {
+    "LocationName": "Colombia Vichada",
+    "Latitude": 4.7117648124694824,
+    "Longitude": -69.414024353027344
+  },
+  {
     "LocationName": "Comoros",
     "Latitude": -11.662553787231445,
     "Longitude": 43.354217529296875
@@ -1455,6 +1615,246 @@
     "Longitude": 137.981689453125
   },
   {
+    "LocationName": "Japan Aichi",
+    "Latitude": 35.035919189453125,
+    "Longitude": 137.21418762207031
+  },
+  {
+    "LocationName": "Japan Akita",
+    "Latitude": 39.7457160949707,
+    "Longitude": 140.40553283691406
+  },
+  {
+    "LocationName": "Japan Aomori",
+    "Latitude": 40.781967163085938,
+    "Longitude": 140.82841491699219
+  },
+  {
+    "LocationName": "Japan Chiba",
+    "Latitude": 35.512264251708984,
+    "Longitude": 140.19837951660156
+  },
+  {
+    "LocationName": "Japan Ehime",
+    "Latitude": 33.602134704589844,
+    "Longitude": 132.85317993164063
+  },
+  {
+    "LocationName": "Japan Fukui",
+    "Latitude": 35.851047515869141,
+    "Longitude": 136.22846984863281
+  },
+  {
+    "LocationName": "Japan Fukuoka",
+    "Latitude": 33.524986267089844,
+    "Longitude": 130.66801452636719
+  },
+  {
+    "LocationName": "Japan Fukushima",
+    "Latitude": 37.3781623840332,
+    "Longitude": 140.225830078125
+  },
+  {
+    "LocationName": "Japan Gifu",
+    "Latitude": 35.778987884521484,
+    "Longitude": 137.0592041015625
+  },
+  {
+    "LocationName": "Japan Gunma",
+    "Latitude": 36.504234313964844,
+    "Longitude": 138.98416137695313
+  },
+  {
+    "LocationName": "Japan Hiroshima",
+    "Latitude": 34.619400024414062,
+    "Longitude": 132.78840637207031
+  },
+  {
+    "LocationName": "Japan Hokkaido",
+    "Latitude": 43.383487701416016,
+    "Longitude": 142.57109069824219
+  },
+  {
+    "LocationName": "Japan Hyogo",
+    "Latitude": 35.093147277832031,
+    "Longitude": 134.82745361328125
+  },
+  {
+    "LocationName": "Japan Ibaraki",
+    "Latitude": 36.308486938476562,
+    "Longitude": 140.31857299804688
+  },
+  {
+    "LocationName": "Japan Ishikawa",
+    "Latitude": 36.766544342041016,
+    "Longitude": 136.77037048339844
+  },
+  {
+    "LocationName": "Japan Kagawa",
+    "Latitude": 34.215160369873047,
+    "Longitude": 133.97467041015625
+  },
+  {
+    "LocationName": "Japan Kagoshima",
+    "Latitude": 32.184677124023438,
+    "Longitude": 130.60836791992188
+  },
+  {
+    "LocationName": "Japan Kanagawa",
+    "Latitude": 35.2535514831543,
+    "Longitude": 139.57638549804688
+  },
+  {
+    "LocationName": "Japan Kochi",
+    "Latitude": 33.424724578857422,
+    "Longitude": 133.37181091308594
+  },
+  {
+    "LocationName": "Japan Kumamoto",
+    "Latitude": 32.616329193115234,
+    "Longitude": 130.75444030761719
+  },
+  {
+    "LocationName": "Japan Kyoto",
+    "Latitude": 35.256790161132812,
+    "Longitude": 135.44352722167969
+  },
+  {
+    "LocationName": "Japan Mie",
+    "Latitude": 34.301513671875,
+    "Longitude": 136.81996154785156
+  },
+  {
+    "LocationName": "Japan Miyagi",
+    "Latitude": 38.447090148925781,
+    "Longitude": 140.92514038085938
+  },
+  {
+    "LocationName": "Japan Miyazaki",
+    "Latitude": 32.191543579101562,
+    "Longitude": 131.30064392089844
+  },
+  {
+    "LocationName": "Japan Nagano",
+    "Latitude": 36.13348388671875,
+    "Longitude": 138.04621887207031
+  },
+  {
+    "LocationName": "Japan Nagasaki",
+    "Latitude": 32.9525032043457,
+    "Longitude": 129.91194152832031
+  },
+  {
+    "LocationName": "Japan Nara",
+    "Latitude": 34.317970275878906,
+    "Longitude": 135.87303161621094
+  },
+  {
+    "LocationName": "Japan Niigata",
+    "Latitude": 37.483425140380859,
+    "Longitude": 138.95774841308594
+  },
+  {
+    "LocationName": "Japan Oita",
+    "Latitude": 33.202777862548828,
+    "Longitude": 131.43440246582031
+  },
+  {
+    "LocationName": "Japan Okayama",
+    "Latitude": 34.90533447265625,
+    "Longitude": 133.81527709960938
+  },
+  {
+    "LocationName": "Japan Okinawa",
+    "Latitude": 26.496217727661133,
+    "Longitude": 127.96163940429688
+  },
+  {
+    "LocationName": "Japan Osaka",
+    "Latitude": 34.624927520751953,
+    "Longitude": 135.51173400878906
+  },
+  {
+    "LocationName": "Japan Port Quarantine",
+    "Latitude": 36.653335571289062,
+    "Longitude": 137.981689453125
+  },
+  {
+    "LocationName": "Japan Saga",
+    "Latitude": 33.287403106689453,
+    "Longitude": 130.11927795410156
+  },
+  {
+    "LocationName": "Japan Saitama",
+    "Latitude": 35.998538970947266,
+    "Longitude": 139.34962463378906
+  },
+  {
+    "LocationName": "Japan Shiga",
+    "Latitude": 35.218143463134766,
+    "Longitude": 136.13934326171875
+  },
+  {
+    "LocationName": "Japan Shimane",
+    "Latitude": 35.012123107910156,
+    "Longitude": 132.52369689941406
+  },
+  {
+    "LocationName": "Japan Shizuoka",
+    "Latitude": 35.017894744873047,
+    "Longitude": 138.33148193359375
+  },
+  {
+    "LocationName": "Japan Tochigi",
+    "Latitude": 36.689971923828125,
+    "Longitude": 139.81915283203125
+  },
+  {
+    "LocationName": "Japan Tokushima",
+    "Latitude": 33.920600891113281,
+    "Longitude": 134.24307250976563
+  },
+  {
+    "LocationName": "Japan Tokyo",
+    "Latitude": 35.713081359863281,
+    "Longitude": 139.44584655761719
+  },
+  {
+    "LocationName": "Japan Tottori",
+    "Latitude": 35.3619270324707,
+    "Longitude": 133.85404968261719
+  },
+  {
+    "LocationName": "Japan Toyama",
+    "Latitude": 36.638111114501953,
+    "Longitude": 137.27113342285156
+  },
+  {
+    "LocationName": "Japan Unknown",
+    "Latitude": 36.653335571289062,
+    "Longitude": 137.981689453125
+  },
+  {
+    "LocationName": "Japan Wakayama",
+    "Latitude": 33.914588928222656,
+    "Longitude": 135.50448608398438
+  },
+  {
+    "LocationName": "Japan Yamagata",
+    "Latitude": 38.447513580322266,
+    "Longitude": 140.09890747070313
+  },
+  {
+    "LocationName": "Japan Yamaguchi",
+    "Latitude": 34.211811065673828,
+    "Longitude": 131.55033874511719
+  },
+  {
+    "LocationName": "Japan Yamanashi",
+    "Latitude": 35.613315582275391,
+    "Longitude": 138.61126708984375
+  },
+  {
     "LocationName": "Jersey",
     "Latitude": 49.2114143371582,
     "Longitude": -2.1334559917449951
@@ -1956,6 +2356,136 @@
   },
   {
     "LocationName": "Peru",
+    "Latitude": -9.1712741851806641,
+    "Longitude": -74.356887817382812
+  },
+  {
+    "LocationName": "Peru Amazonas",
+    "Latitude": -5.0705809593200684,
+    "Longitude": -78.053878784179688
+  },
+  {
+    "LocationName": "Peru Ancash",
+    "Latitude": -9.4078378677368164,
+    "Longitude": -77.670211791992188
+  },
+  {
+    "LocationName": "Peru Apurimac",
+    "Latitude": -14.028046607971191,
+    "Longitude": -72.9754867553711
+  },
+  {
+    "LocationName": "Peru Arequipa",
+    "Latitude": -15.843364715576172,
+    "Longitude": -72.475006103515625
+  },
+  {
+    "LocationName": "Peru Ayacucho",
+    "Latitude": -14.090673446655273,
+    "Longitude": -74.0832748413086
+  },
+  {
+    "LocationName": "Peru Cajamarca",
+    "Latitude": -6.428473949432373,
+    "Longitude": -78.7457275390625
+  },
+  {
+    "LocationName": "Peru Callao",
+    "Latitude": -11.817477226257324,
+    "Longitude": -77.131660461425781
+  },
+  {
+    "LocationName": "Peru Cusco",
+    "Latitude": -13.551548957824707,
+    "Longitude": -71.9814682006836
+  },
+  {
+    "LocationName": "Peru Huancavelica",
+    "Latitude": -13.024188995361328,
+    "Longitude": -75.0029296875
+  },
+  {
+    "LocationName": "Peru Huanuco",
+    "Latitude": -9.4168682098388672,
+    "Longitude": -76.034507751464844
+  },
+  {
+    "LocationName": "Peru Ica",
+    "Latitude": -14.23452091217041,
+    "Longitude": -75.573638916015625
+  },
+  {
+    "LocationName": "Peru Junin",
+    "Latitude": -11.537424087524414,
+    "Longitude": -74.883903503417969
+  },
+  {
+    "LocationName": "Peru La Libertad",
+    "Latitude": -7.9214811325073242,
+    "Longitude": -78.368301391601562
+  },
+  {
+    "LocationName": "Peru Lambayeque",
+    "Latitude": -6.3520731925964355,
+    "Longitude": -79.8231430053711
+  },
+  {
+    "LocationName": "Peru Lima",
+    "Latitude": -12.018630981445313,
+    "Longitude": -76.904258728027344
+  },
+  {
+    "LocationName": "Peru Loreto",
+    "Latitude": -4.1202821731567383,
+    "Longitude": -74.4266128540039
+  },
+  {
+    "LocationName": "Peru Madre de Dios",
+    "Latitude": -11.981083869934082,
+    "Longitude": -70.534675598144531
+  },
+  {
+    "LocationName": "Peru Moquegua",
+    "Latitude": -16.8601016998291,
+    "Longitude": -70.838661193847656
+  },
+  {
+    "LocationName": "Peru Pasco",
+    "Latitude": -10.398381233215332,
+    "Longitude": -75.302444458007812
+  },
+  {
+    "LocationName": "Peru Piura",
+    "Latitude": -5.132206916809082,
+    "Longitude": -80.334808349609375
+  },
+  {
+    "LocationName": "Peru Puno",
+    "Latitude": -16.021295547485352,
+    "Longitude": -70.02947998046875
+  },
+  {
+    "LocationName": "Peru San Martin",
+    "Latitude": -7.0357627868652344,
+    "Longitude": -76.716072082519531
+  },
+  {
+    "LocationName": "Peru Tacna",
+    "Latitude": -17.644311904907227,
+    "Longitude": -70.277587890625
+  },
+  {
+    "LocationName": "Peru Tumbes",
+    "Latitude": -3.8564260005950928,
+    "Longitude": -80.545204162597656
+  },
+  {
+    "LocationName": "Peru Ucayali",
+    "Latitude": -9.6202564239501953,
+    "Longitude": -73.4352798461914
+  },
+  {
+    "LocationName": "Peru Unknown",
     "Latitude": -9.1712741851806641,
     "Longitude": -74.356887817382812
   },
