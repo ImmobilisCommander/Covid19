@@ -940,6 +940,11 @@
     "Longitude": -75.2533950805664
   },
   {
+    "LocationName": "Colombia Unknown",
+    "Latitude": 3.90665602684021,
+    "Longitude": -73.076202392578125
+  },
+  {
     "LocationName": "Colombia Valle del Cauca",
     "Latitude": 3.8496339321136475,
     "Longitude": -76.517082214355469
@@ -2550,6 +2555,421 @@
     "Longitude": 99.8767318725586
   },
   {
+    "LocationName": "Russia Adygea Republic",
+    "Latitude": 44.598484039306641,
+    "Longitude": 39.994522094726562
+  },
+  {
+    "LocationName": "Russia Altai Krai",
+    "Latitude": 52.608310699462891,
+    "Longitude": 82.610092163085938
+  },
+  {
+    "LocationName": "Russia Altai Republic",
+    "Latitude": 50.735591888427734,
+    "Longitude": 87.0164794921875
+  },
+  {
+    "LocationName": "Russia Amur Oblast",
+    "Latitude": 53.411155700683594,
+    "Longitude": 127.72629547119141
+  },
+  {
+    "LocationName": "Russia Arkhangelsk Oblast",
+    "Latitude": 63.41973876953125,
+    "Longitude": 43.141166687011719
+  },
+  {
+    "LocationName": "Russia Astrakhan Oblast",
+    "Latitude": 47.147010803222656,
+    "Longitude": 47.286735534667969
+  },
+  {
+    "LocationName": "Russia Bashkortostan Republic",
+    "Latitude": 54.271064758300781,
+    "Longitude": 56.525463104248047
+  },
+  {
+    "LocationName": "Russia Belgorod Oblast",
+    "Latitude": 50.670757293701172,
+    "Longitude": 37.49285888671875
+  },
+  {
+    "LocationName": "Russia Bryansk Oblast",
+    "Latitude": 52.909370422363281,
+    "Longitude": 33.423763275146484
+  },
+  {
+    "LocationName": "Russia Buryatia Republic",
+    "Latitude": 53.556663513183594,
+    "Longitude": 109.50614929199219
+  },
+  {
+    "LocationName": "Russia Chechen Republic",
+    "Latitude": 43.303691864013672,
+    "Longitude": 45.742347717285156
+  },
+  {
+    "LocationName": "Russia Chelyabinsk Oblast",
+    "Latitude": 54.44598388671875,
+    "Longitude": 60.395084381103516
+  },
+  {
+    "LocationName": "Russia Chukotka Autonomous Okrug",
+    "Latitude": 66.4378662109375,
+    "Longitude": 170.84855651855469
+  },
+  {
+    "LocationName": "Russia Chuvashia Republic",
+    "Latitude": 55.489822387695312,
+    "Longitude": 47.085716247558594
+  },
+  {
+    "LocationName": "Russia Dagestan Republic",
+    "Latitude": 43.040496826171875,
+    "Longitude": 46.870639801025391
+  },
+  {
+    "LocationName": "Russia Ingushetia Republic",
+    "Latitude": 43.1786994934082,
+    "Longitude": 44.884422302246094
+  },
+  {
+    "LocationName": "Russia Irkutsk Oblast",
+    "Latitude": 57.098152160644531,
+    "Longitude": 106.36728668212891
+  },
+  {
+    "LocationName": "Russia Ivanovo Oblast",
+    "Latitude": 56.989070892333984,
+    "Longitude": 41.556766510009766
+  },
+  {
+    "LocationName": "Russia Jewish Autonomous Okrug",
+    "Latitude": 48.517261505126953,
+    "Longitude": 132.26240539550781
+  },
+  {
+    "LocationName": "Russia Kabardino-Balkarian Republic",
+    "Latitude": 43.4931755065918,
+    "Longitude": 43.407066345214844
+  },
+  {
+    "LocationName": "Russia Kaliningrad Oblast",
+    "Latitude": 54.730159759521484,
+    "Longitude": 21.368391036987305
+  },
+  {
+    "LocationName": "Russia Kalmykia Republic",
+    "Latitude": 46.432888031005859,
+    "Longitude": 45.347202301025391
+  },
+  {
+    "LocationName": "Russia Kaluga Oblast",
+    "Latitude": 54.371749877929688,
+    "Longitude": 35.446014404296875
+  },
+  {
+    "LocationName": "Russia Kamchatka Krai",
+    "Latitude": 58.931663513183594,
+    "Longitude": 163.02937316894531
+  },
+  {
+    "LocationName": "Russia Karachay-Cherkess Republic",
+    "Latitude": 43.7712287902832,
+    "Longitude": 41.755069732666016
+  },
+  {
+    "LocationName": "Russia Karelia Republic",
+    "Latitude": 63.554740905761719,
+    "Longitude": 33.142498016357422
+  },
+  {
+    "LocationName": "Russia Kemerovo Oblast",
+    "Latitude": 54.770256042480469,
+    "Longitude": 87.215766906738281
+  },
+  {
+    "LocationName": "Russia Khabarovsk Krai",
+    "Latitude": 54.821273803710938,
+    "Longitude": 137.31729125976563
+  },
+  {
+    "LocationName": "Russia Khakassia Republic",
+    "Latitude": 53.393035888671875,
+    "Longitude": 89.893890380859375
+  },
+  {
+    "LocationName": "Russia Khanty-Mansi Autonomous Okrug",
+    "Latitude": 61.857551574707031,
+    "Longitude": 70.33740234375
+  },
+  {
+    "LocationName": "Russia Kirov Oblast",
+    "Latitude": 58.68157958984375,
+    "Longitude": 49.833427429199219
+  },
+  {
+    "LocationName": "Russia Komi Republic",
+    "Latitude": 64.126396179199219,
+    "Longitude": 54.791984558105469
+  },
+  {
+    "LocationName": "Russia Kostroma Oblast",
+    "Latitude": 58.455745697021484,
+    "Longitude": 43.790069580078125
+  },
+  {
+    "LocationName": "Russia Krasnodar Krai",
+    "Latitude": 45.264244079589844,
+    "Longitude": 39.463527679443359
+  },
+  {
+    "LocationName": "Russia Krasnoyarsk Krai",
+    "Latitude": 67.103851318359375,
+    "Longitude": 96.10235595703125
+  },
+  {
+    "LocationName": "Russia Kurgan Oblast",
+    "Latitude": 55.447799682617188,
+    "Longitude": 64.808990478515625
+  },
+  {
+    "LocationName": "Russia Kursk Oblast",
+    "Latitude": 51.680385589599609,
+    "Longitude": 36.105686187744141
+  },
+  {
+    "LocationName": "Russia Leningrad Oblast",
+    "Latitude": 60.0263671875,
+    "Longitude": 31.714399337768555
+  },
+  {
+    "LocationName": "Russia Lipetsk Oblast",
+    "Latitude": 52.644424438476562,
+    "Longitude": 39.15069580078125
+  },
+  {
+    "LocationName": "Russia Magadan Oblast",
+    "Latitude": 62.373195648193359,
+    "Longitude": 154.45745849609375
+  },
+  {
+    "LocationName": "Russia Mari El Republic",
+    "Latitude": 56.576019287109375,
+    "Longitude": 47.934871673583984
+  },
+  {
+    "LocationName": "Russia Mordovia Republic",
+    "Latitude": 54.362678527832031,
+    "Longitude": 44.453323364257812
+  },
+  {
+    "LocationName": "Russia Moscow",
+    "Latitude": 55.550029754638672,
+    "Longitude": 37.369827270507812
+  },
+  {
+    "LocationName": "Russia Moscow Oblast",
+    "Latitude": 55.813629150390625,
+    "Longitude": 36.71630859375
+  },
+  {
+    "LocationName": "Russia Murmansk Oblast",
+    "Latitude": 67.8056869506836,
+    "Longitude": 34.577262878417969
+  },
+  {
+    "LocationName": "Russia Nenets Autonomous Okrug",
+    "Latitude": 67.784561157226562,
+    "Longitude": 54.545497894287109
+  },
+  {
+    "LocationName": "Russia Nizhny Novgorod Oblast",
+    "Latitude": 56.312435150146484,
+    "Longitude": 44.612754821777344
+  },
+  {
+    "LocationName": "Russia North Ossetia - Alania Republic",
+    "Latitude": 43.092483520507812,
+    "Longitude": 44.262935638427734
+  },
+  {
+    "LocationName": "Russia Novgorod Oblast",
+    "Latitude": 58.307651519775391,
+    "Longitude": 32.491840362548828
+  },
+  {
+    "LocationName": "Russia Novosibirsk Oblast",
+    "Latitude": 55.276401519775391,
+    "Longitude": 79.770187377929688
+  },
+  {
+    "LocationName": "Russia Omsk Oblast",
+    "Latitude": 56.109039306640625,
+    "Longitude": 73.349716186523438
+  },
+  {
+    "LocationName": "Russia Orel Oblast",
+    "Latitude": 52.781658172607422,
+    "Longitude": 36.482685089111328
+  },
+  {
+    "LocationName": "Russia Orenburg Oblast",
+    "Latitude": 51.994949340820312,
+    "Longitude": 55.625755310058594
+  },
+  {
+    "LocationName": "Russia Penza Oblast",
+    "Latitude": 53.182956695556641,
+    "Longitude": 44.632770538330078
+  },
+  {
+    "LocationName": "Russia Perm Krai",
+    "Latitude": 59.117847442626953,
+    "Longitude": 56.226848602294922
+  },
+  {
+    "LocationName": "Russia Primorsky Krai",
+    "Latitude": 45.062801361083984,
+    "Longitude": 134.58451843261719
+  },
+  {
+    "LocationName": "Russia Pskov Oblast",
+    "Latitude": 57.237491607666016,
+    "Longitude": 29.237194061279297
+  },
+  {
+    "LocationName": "Russia Rostov Oblast",
+    "Latitude": 47.740921020507812,
+    "Longitude": 41.314235687255859
+  },
+  {
+    "LocationName": "Russia Ryazan Oblast",
+    "Latitude": 54.333969116210938,
+    "Longitude": 40.627742767333984
+  },
+  {
+    "LocationName": "Russia Saint Petersburg",
+    "Latitude": 60.241748809814453,
+    "Longitude": 29.6466007232666
+  },
+  {
+    "LocationName": "Russia Sakha (Yakutiya) Republic",
+    "Latitude": 61.760215759277344,
+    "Longitude": 99.8767318725586
+  },
+  {
+    "LocationName": "Russia Sakhalin Oblast",
+    "Latitude": 49.9923210144043,
+    "Longitude": 142.78070068359375
+  },
+  {
+    "LocationName": "Russia Samara Oblast",
+    "Latitude": 53.277351379394531,
+    "Longitude": 50.462642669677734
+  },
+  {
+    "LocationName": "Russia Saratov Oblast",
+    "Latitude": 51.5784912109375,
+    "Longitude": 46.7989616394043
+  },
+  {
+    "LocationName": "Russia Smolensk Oblast",
+    "Latitude": 54.956771850585938,
+    "Longitude": 32.999969482421875
+  },
+  {
+    "LocationName": "Russia Stavropol Krai",
+    "Latitude": 44.953563690185547,
+    "Longitude": 43.3454704284668
+  },
+  {
+    "LocationName": "Russia Sverdlovsk Oblast",
+    "Latitude": 58.587154388427734,
+    "Longitude": 61.530315399169922
+  },
+  {
+    "LocationName": "Russia Tambov Oblast",
+    "Latitude": 52.681049346923828,
+    "Longitude": 41.587871551513672
+  },
+  {
+    "LocationName": "Russia Tatarstan Republic",
+    "Latitude": 55.352420806884766,
+    "Longitude": 50.918342590332031
+  },
+  {
+    "LocationName": "Russia Tomsk Oblast",
+    "Latitude": 58.467613220214844,
+    "Longitude": 82.1585693359375
+  },
+  {
+    "LocationName": "Russia Tula Oblast",
+    "Latitude": 53.8883171081543,
+    "Longitude": 37.576652526855469
+  },
+  {
+    "LocationName": "Russia Tver Oblast",
+    "Latitude": 57.093898773193359,
+    "Longitude": 34.708881378173828
+  },
+  {
+    "LocationName": "Russia Tyumen Oblast",
+    "Latitude": 57.683315277099609,
+    "Longitude": 69.137077331542969
+  },
+  {
+    "LocationName": "Russia Tyva Republic",
+    "Latitude": 51.585502624511719,
+    "Longitude": 94.795738220214844
+  },
+  {
+    "LocationName": "Russia Udmurt Republic",
+    "Latitude": 57.166580200195312,
+    "Longitude": 52.799301147460938
+  },
+  {
+    "LocationName": "Russia Ulyanovsk Oblast",
+    "Latitude": 53.8896598815918,
+    "Longitude": 47.943328857421875
+  },
+  {
+    "LocationName": "Russia Vladimir Oblast",
+    "Latitude": 56.01348876953125,
+    "Longitude": 40.678714752197266
+  },
+  {
+    "LocationName": "Russia Volgograd Oblast",
+    "Latitude": 49.616069793701172,
+    "Longitude": 44.152812957763672
+  },
+  {
+    "LocationName": "Russia Vologda Oblast",
+    "Latitude": 59.962100982666016,
+    "Longitude": 40.514289855957031
+  },
+  {
+    "LocationName": "Russia Voronezh Oblast",
+    "Latitude": 50.97088623046875,
+    "Longitude": 40.234504699707031
+  },
+  {
+    "LocationName": "Russia Yamalo-Nenets Autonomous Okrug",
+    "Latitude": 67.356498718261719,
+    "Longitude": 74.516525268554688
+  },
+  {
+    "LocationName": "Russia Yaroslavl Oblast",
+    "Latitude": 57.863327026367188,
+    "Longitude": 39.147823333740234
+  },
+  {
+    "LocationName": "Russia Zabaykalsky Krai",
+    "Latitude": 52.8466682434082,
+    "Longitude": 116.19995880126953
+  },
+  {
     "LocationName": "Russian Federation",
     "Latitude": 61.760215759277344,
     "Longitude": 99.8767318725586
@@ -2888,6 +3308,141 @@
     "LocationName": "Ukraine",
     "Latitude": 49.160293579101562,
     "Longitude": 31.278129577636719
+  },
+  {
+    "LocationName": "Ukraine Cherkasy Oblast",
+    "Latitude": 49.260440826416016,
+    "Longitude": 31.353261947631836
+  },
+  {
+    "LocationName": "Ukraine Chernihiv Oblast",
+    "Latitude": 51.355289459228516,
+    "Longitude": 32.004878997802734
+  },
+  {
+    "LocationName": "Ukraine Chernivtsi Oblast",
+    "Latitude": 48.268318176269531,
+    "Longitude": 25.977603912353516
+  },
+  {
+    "LocationName": "Ukraine Crimea Republic*",
+    "Latitude": 49.160293579101562,
+    "Longitude": 31.278129577636719
+  },
+  {
+    "LocationName": "Ukraine Dnipropetrovsk Oblast",
+    "Latitude": 48.301422119140625,
+    "Longitude": 34.845321655273438
+  },
+  {
+    "LocationName": "Ukraine Donetsk Oblast",
+    "Latitude": 48.047737121582031,
+    "Longitude": 37.675357818603516
+  },
+  {
+    "LocationName": "Ukraine Ivano-Frankivsk Oblast",
+    "Latitude": 48.701675415039062,
+    "Longitude": 24.620817184448242
+  },
+  {
+    "LocationName": "Ukraine Kharkiv Oblast",
+    "Latitude": 49.615184783935547,
+    "Longitude": 36.506610870361328
+  },
+  {
+    "LocationName": "Ukraine Kherson Oblast",
+    "Latitude": 46.668106079101562,
+    "Longitude": 33.58349609375
+  },
+  {
+    "LocationName": "Ukraine Khmelnytskyi Oblast",
+    "Latitude": 49.507221221923828,
+    "Longitude": 26.930768966674805
+  },
+  {
+    "LocationName": "Ukraine Kiev",
+    "Latitude": 50.298656463623047,
+    "Longitude": 30.457357406616211
+  },
+  {
+    "LocationName": "Ukraine Kiev Oblast",
+    "Latitude": 50.298656463623047,
+    "Longitude": 30.457357406616211
+  },
+  {
+    "LocationName": "Ukraine Kirovohrad Oblast",
+    "Latitude": 48.472476959228516,
+    "Longitude": 32.083076477050781
+  },
+  {
+    "LocationName": "Ukraine Luhansk Oblast",
+    "Latitude": 48.985641479492188,
+    "Longitude": 39.0187873840332
+  },
+  {
+    "LocationName": "Ukraine Lviv Oblast",
+    "Latitude": 49.717731475830078,
+    "Longitude": 23.917537689208984
+  },
+  {
+    "LocationName": "Ukraine Mykolaiv Oblast",
+    "Latitude": 47.428485870361328,
+    "Longitude": 31.779787063598633
+  },
+  {
+    "LocationName": "Ukraine Odessa Oblast",
+    "Latitude": 48.2323112487793,
+    "Longitude": 29.935659408569336
+  },
+  {
+    "LocationName": "Ukraine Poltava Oblast",
+    "Latitude": 49.732589721679688,
+    "Longitude": 33.779911041259766
+  },
+  {
+    "LocationName": "Ukraine Rivne Oblast",
+    "Latitude": 51.039825439453125,
+    "Longitude": 26.392509460449219
+  },
+  {
+    "LocationName": "Ukraine Sevastopol*",
+    "Latitude": 44.600002288818359,
+    "Longitude": 33.533267974853516
+  },
+  {
+    "LocationName": "Ukraine Sumy Oblast",
+    "Latitude": 51.1064567565918,
+    "Longitude": 34.125213623046875
+  },
+  {
+    "LocationName": "Ukraine Ternopil Oblast",
+    "Latitude": 49.402606964111328,
+    "Longitude": 25.649322509765625
+  },
+  {
+    "LocationName": "Ukraine Vinnytsia Oblast",
+    "Latitude": 48.920589447021484,
+    "Longitude": 28.687122344970703
+  },
+  {
+    "LocationName": "Ukraine Volyn Oblast",
+    "Latitude": 51.191078186035156,
+    "Longitude": 24.871404647827148
+  },
+  {
+    "LocationName": "Ukraine Zakarpattia Oblast",
+    "Latitude": 48.403881072998047,
+    "Longitude": 23.276351928710938
+  },
+  {
+    "LocationName": "Ukraine Zaporizhia Oblast",
+    "Latitude": 47.249168395996094,
+    "Longitude": 35.6899528503418
+  },
+  {
+    "LocationName": "Ukraine Zhytomyr Oblast",
+    "Latitude": 50.639873504638672,
+    "Longitude": 28.47730827331543
   },
   {
     "LocationName": "United Arab Emirates",
