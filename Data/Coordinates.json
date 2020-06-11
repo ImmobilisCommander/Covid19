@@ -875,6 +875,11 @@
     "Longitude": -68.815811157226562
   },
   {
+    "LocationName": "Colombia Guaviare",
+    "Latitude": 1.9260540008544922,
+    "Longitude": -72.12750244140625
+  },
+  {
     "LocationName": "Colombia Huila",
     "Latitude": 2.5570640563964844,
     "Longitude": -75.5944595336914
@@ -1448,6 +1453,186 @@
     "LocationName": "India",
     "Latitude": 22.493118286132812,
     "Longitude": 79.727012634277344
+  },
+  {
+    "LocationName": "India Andaman and Nicobar Islands",
+    "Latitude": 12.541158676147461,
+    "Longitude": 92.8179931640625
+  },
+  {
+    "LocationName": "India Andhra Pradesh",
+    "Latitude": 15.72052001953125,
+    "Longitude": 79.937713623046875
+  },
+  {
+    "LocationName": "India Arunachal Pradesh",
+    "Latitude": 28.129722595214844,
+    "Longitude": 94.350311279296875
+  },
+  {
+    "LocationName": "India Assam",
+    "Latitude": 26.354543685913086,
+    "Longitude": 92.830459594726562
+  },
+  {
+    "LocationName": "India Bihar",
+    "Latitude": 25.678825378417969,
+    "Longitude": 85.612419128417969
+  },
+  {
+    "LocationName": "India Chandigarh",
+    "Latitude": 30.726646423339844,
+    "Longitude": 76.78118896484375
+  },
+  {
+    "LocationName": "India Chhattisgarh",
+    "Latitude": 21.266508102416992,
+    "Longitude": 82.042793273925781
+  },
+  {
+    "LocationName": "India Dadar Nagar Haveli",
+    "Latitude": 20.270027160644531,
+    "Longitude": 73.019943237304688
+  },
+  {
+    "LocationName": "India Delhi",
+    "Latitude": 28.642963409423828,
+    "Longitude": 77.115875244140625
+  },
+  {
+    "LocationName": "India Goa",
+    "Latitude": 15.362579345703125,
+    "Longitude": 74.054290771484375
+  },
+  {
+    "LocationName": "India Gujarat",
+    "Latitude": 22.767599105834961,
+    "Longitude": 71.636360168457031
+  },
+  {
+    "LocationName": "India Haryana",
+    "Latitude": 29.196577072143555,
+    "Longitude": 76.341560363769531
+  },
+  {
+    "LocationName": "India Himachal Pradesh",
+    "Latitude": 31.923288345336914,
+    "Longitude": 77.250160217285156
+  },
+  {
+    "LocationName": "India Jammu and Kashmir",
+    "Latitude": 33.796646118164062,
+    "Longitude": 76.6590576171875
+  },
+  {
+    "LocationName": "India Jharkhand",
+    "Latitude": 23.656364440917969,
+    "Longitude": 85.563613891601562
+  },
+  {
+    "LocationName": "India Karnataka",
+    "Latitude": 14.707346916198731,
+    "Longitude": 76.168937683105469
+  },
+  {
+    "LocationName": "India Kerala",
+    "Latitude": 10.447264671325684,
+    "Longitude": 76.408897399902344
+  },
+  {
+    "LocationName": "India Ladakh",
+    "Latitude": 22.493118286132812,
+    "Longitude": 79.727012634277344
+  },
+  {
+    "LocationName": "India Madhya Pradesh",
+    "Latitude": 23.5390567779541,
+    "Longitude": 78.2909164428711
+  },
+  {
+    "LocationName": "India Maharashtra",
+    "Latitude": 19.451103210449219,
+    "Longitude": 76.1089096069336
+  },
+  {
+    "LocationName": "India Manipur",
+    "Latitude": 24.731636047363281,
+    "Longitude": 93.883941650390625
+  },
+  {
+    "LocationName": "India Meghalaya",
+    "Latitude": 25.536598205566406,
+    "Longitude": 91.279373168945312
+  },
+  {
+    "LocationName": "India Mizoram",
+    "Latitude": 23.307804107666016,
+    "Longitude": 92.82891845703125
+  },
+  {
+    "LocationName": "India Nagaland",
+    "Latitude": 26.059337615966797,
+    "Longitude": 94.4720458984375
+  },
+  {
+    "LocationName": "India Odisha",
+    "Latitude": 20.510730743408203,
+    "Longitude": 84.425750732421875
+  },
+  {
+    "LocationName": "India Puducherry",
+    "Latitude": 11.92003345489502,
+    "Longitude": 79.769462585449219
+  },
+  {
+    "LocationName": "India Punjab",
+    "Latitude": 30.843242645263672,
+    "Longitude": 75.41748046875
+  },
+  {
+    "LocationName": "India Rajasthan",
+    "Latitude": 26.584493637084961,
+    "Longitude": 73.848701477050781
+  },
+  {
+    "LocationName": "India Sikkim",
+    "Latitude": 27.571226119995117,
+    "Longitude": 88.475959777832031
+  },
+  {
+    "LocationName": "India Tamil Nadu",
+    "Latitude": 11.01596736907959,
+    "Longitude": 78.410285949707031
+  },
+  {
+    "LocationName": "India Telangana",
+    "Latitude": 17.799900054931641,
+    "Longitude": 79.065620422363281
+  },
+  {
+    "LocationName": "India Tripura",
+    "Latitude": 23.746522903442383,
+    "Longitude": 91.7401123046875
+  },
+  {
+    "LocationName": "India Unknown",
+    "Latitude": 22.493118286132812,
+    "Longitude": 79.727012634277344
+  },
+  {
+    "LocationName": "India Uttar Pradesh",
+    "Latitude": 26.922319412231445,
+    "Longitude": 80.567550659179688
+  },
+  {
+    "LocationName": "India Uttarakhand",
+    "Latitude": 30.154397964477539,
+    "Longitude": 79.205574035644531
+  },
+  {
+    "LocationName": "India West Bengal",
+    "Latitude": 23.839706420898438,
+    "Longitude": 87.9781265258789
   },
   {
     "LocationName": "Indonesia",
@@ -2340,6 +2525,41 @@
     "Longitude": 68.801834106445312
   },
   {
+    "LocationName": "Pakistan Azad Jammu and Kashmir",
+    "Latitude": 34.078006744384766,
+    "Longitude": 73.707038879394531
+  },
+  {
+    "LocationName": "Pakistan Balochistan",
+    "Latitude": 28.316837310791016,
+    "Longitude": 65.883010864257812
+  },
+  {
+    "LocationName": "Pakistan Gilgit-Baltistan",
+    "Latitude": 35.816257476806641,
+    "Longitude": 74.902450561523438
+  },
+  {
+    "LocationName": "Pakistan Islamabad",
+    "Latitude": 33.657222747802734,
+    "Longitude": 73.07733154296875
+  },
+  {
+    "LocationName": "Pakistan Khyber Pakhtunkhwa",
+    "Latitude": 34.471626281738281,
+    "Longitude": 72.082534790039062
+  },
+  {
+    "LocationName": "Pakistan Punjab",
+    "Latitude": 30.806665420532227,
+    "Longitude": 72.144981384277344
+  },
+  {
+    "LocationName": "Pakistan Sindh",
+    "Latitude": 26.034477233886719,
+    "Longitude": 68.795661926269531
+  },
+  {
     "LocationName": "Palestine",
     "Latitude": 0.0,
     "Longitude": 0.0
@@ -3208,6 +3428,111 @@
     "LocationName": "Sweden",
     "Latitude": 62.821784973144531,
     "Longitude": 16.735380172729492
+  },
+  {
+    "LocationName": "Sweden Blekinge",
+    "Latitude": 56.283649444580078,
+    "Longitude": 15.189265251159668
+  },
+  {
+    "LocationName": "Sweden Dalarna",
+    "Latitude": 60.959976196289062,
+    "Longitude": 14.347683906555176
+  },
+  {
+    "LocationName": "Sweden Gavleborg",
+    "Latitude": 61.448875427246094,
+    "Longitude": 16.28935432434082
+  },
+  {
+    "LocationName": "Sweden Gotland",
+    "Latitude": 57.637058258056641,
+    "Longitude": 18.303970336914062
+  },
+  {
+    "LocationName": "Sweden Halland",
+    "Latitude": 56.964019775390625,
+    "Longitude": 12.8316011428833
+  },
+  {
+    "LocationName": "Sweden Jamtland Harjedalen",
+    "Latitude": 62.035118103027344,
+    "Longitude": 14.37477970123291
+  },
+  {
+    "LocationName": "Sweden Jonkoping",
+    "Latitude": 57.5330924987793,
+    "Longitude": 14.407835960388184
+  },
+  {
+    "LocationName": "Sweden Kalmar",
+    "Latitude": 56.666130065917969,
+    "Longitude": 16.36393928527832
+  },
+  {
+    "LocationName": "Sweden Kronoberg",
+    "Latitude": 56.794174194335938,
+    "Longitude": 14.571566581726074
+  },
+  {
+    "LocationName": "Sweden Norrbotten",
+    "Latitude": 66.958297729492188,
+    "Longitude": 20.081428527832031
+  },
+  {
+    "LocationName": "Sweden Orebro",
+    "Latitude": 59.270839691162109,
+    "Longitude": 15.21759033203125
+  },
+  {
+    "LocationName": "Sweden Ostergotland",
+    "Latitude": 58.364589691162109,
+    "Longitude": 15.667974472045898
+  },
+  {
+    "LocationName": "Sweden Skane",
+    "Latitude": 55.952224731445312,
+    "Longitude": 13.597034454345703
+  },
+  {
+    "LocationName": "Sweden Sormland",
+    "Latitude": 62.821784973144531,
+    "Longitude": 16.735380172729492
+  },
+  {
+    "LocationName": "Sweden Stockholm",
+    "Latitude": 59.470096588134766,
+    "Longitude": 18.127899169921875
+  },
+  {
+    "LocationName": "Sweden Uppsala",
+    "Latitude": 59.858619689941406,
+    "Longitude": 17.643730163574219
+  },
+  {
+    "LocationName": "Sweden Varmland",
+    "Latitude": 59.773754119873047,
+    "Longitude": 13.152804374694824
+  },
+  {
+    "LocationName": "Sweden Vasterbotten",
+    "Latitude": 64.86712646484375,
+    "Longitude": 17.823944091796875
+  },
+  {
+    "LocationName": "Sweden Vasternorrland",
+    "Latitude": 63.103633880615234,
+    "Longitude": 17.252464294433594
+  },
+  {
+    "LocationName": "Sweden Vastmanland",
+    "Latitude": 59.7474250793457,
+    "Longitude": 16.163652420043945
+  },
+  {
+    "LocationName": "Sweden Vastra Gotaland",
+    "Latitude": 58.310844421386719,
+    "Longitude": 12.829960823059082
   },
   {
     "LocationName": "Switzerland",
