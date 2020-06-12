@@ -1495,6 +1495,11 @@
     "Longitude": 73.019943237304688
   },
   {
+    "LocationName": "India Dadra and Nagar Haveli and Daman and Diu",
+    "Latitude": 20.411211013793945,
+    "Longitude": 72.863372802734375
+  },
+  {
     "LocationName": "India Delhi",
     "Latitude": 28.642963409423828,
     "Longitude": 77.115875244140625
@@ -3805,6 +3810,11 @@
     "Longitude": -2.5505630970001221
   },
   {
+    "LocationName": "United Kingdom England",
+    "Latitude": 52.598876953125,
+    "Longitude": -1.4668810367584229
+  },
+  {
     "LocationName": "United Kingdom Falkland Islands (Islas Malvinas)",
     "Latitude": 53.9438362121582,
     "Longitude": -2.5505630970001221
@@ -3830,6 +3840,16 @@
     "Longitude": -2.5505630970001221
   },
   {
+    "LocationName": "United Kingdom Northern Ireland",
+    "Latitude": 54.611667633056641,
+    "Longitude": -6.6856560707092285
+  },
+  {
+    "LocationName": "United Kingdom Scotland",
+    "Latitude": 56.69036865234375,
+    "Longitude": -4.0440149307250977
+  },
+  {
     "LocationName": "United Kingdom Turks and Caicos Islands",
     "Latitude": 53.9438362121582,
     "Longitude": -2.5505630970001221
@@ -3843,6 +3863,16 @@
     "LocationName": "United Kingdom United Kingdom",
     "Latitude": 53.9438362121582,
     "Longitude": -2.5505630970001221
+  },
+  {
+    "LocationName": "United Kingdom Unknown",
+    "Latitude": 53.9438362121582,
+    "Longitude": -2.5505630970001221
+  },
+  {
+    "LocationName": "United Kingdom Wales",
+    "Latitude": 52.3250732421875,
+    "Longitude": -3.7994129657745361
   },
   {
     "LocationName": "United Republic of Tanzania",
