@@ -35,6 +35,7 @@ namespace Covid19.Library
         /// </summary>
         public void DownloadFiles()
         {
+            //             https://www.ecdc.europa.eu
             var rootUrl = "https://www.ecdc.europa.eu";
             var existingFiles = Directory.GetFiles(_downloadFolder).ToList();
             // Date of the first available file
@@ -44,12 +45,14 @@ namespace Covid19.Library
 
             for (int i = 0; i < nbDaysToNow; i++)
             {
+                //               COVID-19-geographic-disbtribution-worldwide-2020-08-01.xlsx
                 var fileName = $"COVID-19-geographic-disbtribution-worldwide-{fromDate.AddDays(i):yyyy-MM-dd}";
 
                 // If file has been already downloaded from a previous run don't dowload it again
                 if ((_forceDownload.HasValue && _forceDownload.Value) || !existingFiles.Any(x => x.Contains(fileName)))
                 {
                     // First files are in xls format
+                    //                   /sites/default/files/documents/
                     var url = $"{rootUrl}/sites/default/files/documents/{fileName}.xls";
 
                     var uri = new Uri(url);

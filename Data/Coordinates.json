@@ -1555,6 +1555,11 @@
     "Longitude": 79.727012634277344
   },
   {
+    "LocationName": "India Lakshadweep",
+    "Latitude": 11.276949882507324,
+    "Longitude": 74.04296875
+  },
+  {
     "LocationName": "India Madhya Pradesh",
     "Latitude": 23.5390567779541,
     "Longitude": 78.2909164428711
@@ -1888,6 +1893,11 @@
     "LocationName": "Japan Ishikawa",
     "Latitude": 36.766544342041016,
     "Longitude": 136.77037048339844
+  },
+  {
+    "LocationName": "Japan Iwate",
+    "Latitude": 39.590751647949219,
+    "Longitude": 141.43692016601563
   },
   {
     "LocationName": "Japan Kagawa",
@@ -2450,14 +2460,79 @@
     "Longitude": 5.5652151107788086
   },
   {
+    "LocationName": "Netherlands Drenthe",
+    "Latitude": 52.862476348876953,
+    "Longitude": 6.61843204498291
+  },
+  {
+    "LocationName": "Netherlands Flevoland",
+    "Latitude": 52.5504264831543,
+    "Longitude": 5.5140209197998047
+  },
+  {
+    "LocationName": "Netherlands Friesland",
+    "Latitude": 53.067218780517578,
+    "Longitude": 5.80664587020874
+  },
+  {
+    "LocationName": "Netherlands Gelderland",
+    "Latitude": 52.061725616455078,
+    "Longitude": 5.9390811920166016
+  },
+  {
+    "LocationName": "Netherlands Groningen",
+    "Latitude": 53.214469909667969,
+    "Longitude": 6.5664811134338379
+  },
+  {
+    "LocationName": "Netherlands Limburg",
+    "Latitude": 51.209236145019531,
+    "Longitude": 5.933894157409668
+  },
+  {
     "LocationName": "Netherlands Netherlands",
     "Latitude": 52.245765686035156,
     "Longitude": 5.5652151107788086
   },
   {
+    "LocationName": "Netherlands Noord-Brabant",
+    "Latitude": 51.561172485351562,
+    "Longitude": 5.184992790222168
+  },
+  {
+    "LocationName": "Netherlands Noord-Holland",
+    "Latitude": 52.576908111572266,
+    "Longitude": 4.9243860244750977
+  },
+  {
+    "LocationName": "Netherlands Overijssel",
+    "Latitude": 52.444561004638672,
+    "Longitude": 6.4417729377746582
+  },
+  {
     "LocationName": "Netherlands Sint Maarten",
     "Latitude": 52.245765686035156,
     "Longitude": 5.5652151107788086
+  },
+  {
+    "LocationName": "Netherlands Unknown",
+    "Latitude": 52.269069671630859,
+    "Longitude": 5.6114020347595215
+  },
+  {
+    "LocationName": "Netherlands Utrecht",
+    "Latitude": 52.084232330322266,
+    "Longitude": 5.1638808250427246
+  },
+  {
+    "LocationName": "Netherlands Zeeland",
+    "Latitude": 51.561370849609375,
+    "Longitude": 3.8976080417633057
+  },
+  {
+    "LocationName": "Netherlands Zuid-Holland",
+    "Latitude": 51.937782287597656,
+    "Longitude": 4.4625558853149414
   },
   {
     "LocationName": "New Caledonia",
@@ -10120,6 +10195,11 @@
     "Longitude": -92.070648193359375
   },
   {
+    "LocationName": "US Louisiana Out of LA",
+    "Latitude": 30.981019973754883,
+    "Longitude": -91.891807556152344
+  },
+  {
     "LocationName": "US Louisiana Plaquemines",
     "Latitude": 30.966510772705078,
     "Longitude": -91.8519058227539
@@ -10308,6 +10388,11 @@
     "LocationName": "US Maine Lincoln",
     "Latitude": 45.3643684387207,
     "Longitude": -68.503608703613281
+  },
+  {
+    "LocationName": "US Maine Out of ME",
+    "Latitude": 45.346641540527344,
+    "Longitude": -69.216140747070312
   },
   {
     "LocationName": "US Maine Oxford",
@@ -16223,6 +16308,401 @@
     "LocationName": "US Puerto Rico",
     "Latitude": 39.49591064453125,
     "Longitude": -98.989982604980469
+  },
+  {
+    "LocationName": "US Puerto Rico Adjuntas",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Aguada",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Aguadilla",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Aguas Buenas",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Aibonito",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Anasco",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Arecibo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Arroyo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Barceloneta",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Barranquitas",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Bayamon",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Cabo Rojo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Caguas",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Camuy",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Canovanas",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Carolina",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Catano",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Cayey",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Ceiba",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Ciales",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Cidra",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Coamo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Comerio",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Corozal",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Culebra",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Dorado",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Fajardo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Florida",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Guanica",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Guayama",
+    "Latitude": 17.974502563476562,
+    "Longitude": -66.102302551269531
+  },
+  {
+    "LocationName": "US Puerto Rico Guayanilla",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Guaynabo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Gurabo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Hatillo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Hormigueros",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Humacao",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Isabela",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Jayuya",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Juana Diaz",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Juncos",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Lajas",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Lares",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Las Marias",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Las Piedras",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Loiza",
+    "Latitude": 18.427528381347656,
+    "Longitude": -65.878265380859375
+  },
+  {
+    "LocationName": "US Puerto Rico Luquillo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Manati",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Maricao",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Maunabo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Mayaguez",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Moca",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Morovis",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Naguabo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Naranjito",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Orocovis",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Out of PR",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Patillas",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Penuelas",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Ponce",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Quebradillas",
+    "Latitude": 18.473886489868164,
+    "Longitude": -66.937461853027344
+  },
+  {
+    "LocationName": "US Puerto Rico Rincon",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Rio Grande",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Sabana Grande",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Salinas",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico San German",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico San Juan",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico San Lorenzo",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico San Sebastian",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Santa Isabel",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Toa Alta",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Toa Baja",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Trujillo Alto",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Utuado",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Vega Alta",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Vega Baja",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Vieques",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Villalba",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Yabucoa",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
+  },
+  {
+    "LocationName": "US Puerto Rico Yauco",
+    "Latitude": 39.5035514831543,
+    "Longitude": -99.018302917480469
   },
   {
     "LocationName": "US Queens County, NY",
