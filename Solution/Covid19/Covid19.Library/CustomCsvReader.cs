@@ -46,12 +46,23 @@ namespace Covid19.Library
         /// </summary>
         /// <param name="index">Index of the field to get</param>
         /// <returns></returns>
-        public int GetFieldAsInt(int index)
+        public int GetFieldAsInt(int index, CultureInfo cu)
         {
             if (index >= 0)
             {
                 var temp = base.GetField(index);
-                return string.IsNullOrEmpty(temp) ? 0 : Convert.ToInt32(temp);
+                if (string.IsNullOrEmpty(temp))
+                {
+                    return 0;
+                }
+                else if (int.TryParse(temp, NumberStyles.AllowDecimalPoint | NumberStyles.AllowLeadingSign, cu, out int result))
+                {
+                    return result;
+                }
+                else
+                {
+                    throw new FormatException($"Field {index} is not in correct format: {temp}");
+                }
             }
             else
             {
@@ -70,7 +81,18 @@ namespace Covid19.Library
             if (index >= 0)
             {
                 var temp = base.GetField(index);
-                return string.IsNullOrEmpty(temp) ? 0 : Convert.ToDouble(temp, cu);
+                if (string.IsNullOrEmpty(temp))
+                {
+                    return 0;
+                }
+                else if (double.TryParse(temp, NumberStyles.AllowDecimalPoint | NumberStyles.AllowLeadingSign, cu, out double result))
+                {
+                    return result;
+                }
+                else
+                {
+                    throw new FormatException($"Field {index} is not in correct format: {temp}");
+                }
             }
             else
             {

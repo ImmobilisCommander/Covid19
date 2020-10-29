@@ -124,7 +124,7 @@ namespace Covid19.Library
 
                                 if (DateTime.TryParseExact(date, _dateFormats, CultureInfo.GetCultureInfo("fr-fr"), DateTimeStyles.AdjustToUniversal, out DateTime lastUpdate))
                                 {
-                                    string area = csv.GetField(idxArea).Replace("Mainland China", "China").Replace("UK", "United Kingdom");
+                                    string area = csv.GetField(idxArea).Replace("Mainland China", "China").Replace("UK", "United Kingdom").Replace("United_Kingdom", "United Kingdom");
                                     string subarea = csv.GetField(idxSub);
 
                                     if (!string.IsNullOrEmpty(area))
@@ -135,8 +135,8 @@ namespace Covid19.Library
                                         obj.SubArea = subarea;
                                         obj.Admin2 = csv.GetField(idxAdmin2)?.Replace("Unassigned", string.Empty);
                                         obj.Date = lastUpdate;
-                                        obj.Confirmed = csv.GetFieldAsInt(idxConf);
-                                        obj.Death = csv.GetFieldAsInt(idxDeath);
+                                        obj.Confirmed = csv.GetFieldAsInt(idxConf, _us);
+                                        obj.Death = csv.GetFieldAsInt(idxDeath, _us);
                                         obj.Latitude = csv.GetFieldAsDouble(idxLat, _us);
                                         obj.Longitude = csv.GetFieldAsDouble(idxLng, _us);
 

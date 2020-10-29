@@ -2200,6 +2200,11 @@
     "Longitude": 14.439534187316895
   },
   {
+    "LocationName": "Marshall Islands",
+    "Latitude": 7.0774211883544922,
+    "Longitude": 171.328369140625
+  },
+  {
     "LocationName": "Martinique",
     "Latitude": 14.653226852416992,
     "Longitude": -61.018684387207031
@@ -3365,6 +3370,11 @@
     "Longitude": 14.821761131286621
   },
   {
+    "LocationName": "Solomon Islands",
+    "Latitude": -9.62238883972168,
+    "Longitude": 160.15953063964844
+  },
+  {
     "LocationName": "Somalia",
     "Latitude": 6.5336451530456543,
     "Longitude": 48.076171875
@@ -4363,6 +4373,11 @@
     "LocationName": "US Alaska Bristol Bay",
     "Latitude": 63.174114227294922,
     "Longitude": -153.70426940917969
+  },
+  {
+    "LocationName": "US Alaska Bristol Bay plus Lake and Peninsula",
+    "Latitude": 64.144538879394531,
+    "Longitude": -152.28460693359375
   },
   {
     "LocationName": "US Alaska Denali",
@@ -13930,6 +13945,11 @@
     "Longitude": -73.611259460449219
   },
   {
+    "LocationName": "US New York New York",
+    "Latitude": 40.713047027587891,
+    "Longitude": -74.007232666015625
+  },
+  {
     "LocationName": "US New York New York City",
     "Latitude": 40.714550018310547,
     "Longitude": -74.00714111328125
@@ -21288,6 +21308,11 @@
     "LocationName": "Vietnam",
     "Latitude": 16.167692184448242,
     "Longitude": 107.83905029296875
+  },
+  {
+    "LocationName": "Wallis and Futuna",
+    "Latitude": -13.285103797912598,
+    "Longitude": -176.20426940917969
   },
   {
     "LocationName": "West Bank and Gaza",

@@ -75,7 +75,7 @@ namespace Covid19.Library
 
                             if (country == -1)
                             {
-                                obj.Area = row.TryGetValue("countriesAndTerritories");
+                                obj.Area = row.TryGetValue("countriesAndTerritories").Replace("UK", "United Kingdom").Replace("United_Kingdom", "United Kingdom");
                                 obj.Date = new DateTime(Convert.ToInt32(row.TryGetValue("Year")), Convert.ToInt32(row.TryGetValue("Month")), Convert.ToInt32(row.TryGetValue("Day")));
                                 obj.Confirmed = Convert.ToInt32(row.TryGetValue("Cases"));
                                 obj.Death = Convert.ToInt32(row.TryGetValue("Deaths"));
